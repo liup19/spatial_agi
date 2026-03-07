@@ -43,11 +43,44 @@ spatial_agi/
 ### 定时执行
 每天凌晨3点自动执行（通过OpenClaw cron）
 
+## 🔧 环境配置
+
+### 当前分析方案
+**使用GLM WebReader（备选方案）**
+- ✅ 无需额外配置
+- ✅ 立即可用
+- ✅ 质量高（GLM-5理解能力强）
+
+### 完整NotebookLM配置（可选）
+如需使用NotebookLM进行更深度分析：
+
+```bash
+# 运行配置脚本
+cd ~/.openclaw/workspace/spatial_agi
+bash scripts/setup_notebooklm.sh
+```
+
+**要求**：
+- Chromium浏览器
+- Google账号
+- sudo权限（安装Chromium）
+
+### Conda环境
+项目使用独立的conda环境：
+```bash
+conda activate spatial-agi
+```
+
+**已安装工具**：
+- notebooklm-cli (nlm命令)
+- Python 3.11
+
 ## 📊 研究统计
 
 - 开始日期: 2026-03-08
 - 论文总数: 0篇
 - 研究天数: 0天
+- 分析方法: GLM WebReader
 
 ## 🔗 相关链接
 
