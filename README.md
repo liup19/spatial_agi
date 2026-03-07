@@ -46,24 +46,24 @@ spatial_agi/
 ## 🔧 环境配置
 
 ### 当前分析方案
-**使用GLM WebReader（备选方案）**
-- ✅ 无需额外配置
-- ✅ 立即可用
-- ✅ 质量高（GLM-5理解能力强）
+**NotebookLM（首选）+ GLM WebReader（备选）**
+- ✅ NotebookLM已认证并可用
+- ✅ GLM WebReader作为备选方案
+- ✅ 自动降级机制
 
-### 完整NotebookLM配置（可选）
-如需使用NotebookLM进行更深度分析：
+### NotebookLM配置
+**✅ 已完成配置**
+- NotebookLM CLI已安装（nlm命令）
+- 认证已配置（使用cookies文件）
+- 可以创建笔记本和询问问题
 
+**手动配置（如果需要）**：
 ```bash
-# 运行配置脚本
-cd ~/.openclaw/workspace/spatial_agi
-bash scripts/setup_notebooklm.sh
+# 使用现有cookies文件
+source ~/miniconda3/bin/activate
+conda activate spatial-agi
+nlm login --manual -f /home/ropliu/.notebooklm-mcp-cli/notebooklm.google.com_cookies.json
 ```
-
-**要求**：
-- Chromium浏览器
-- Google账号
-- sudo权限（安装Chromium）
 
 ### Conda环境
 项目使用独立的conda环境：
