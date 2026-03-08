@@ -1,0 +1,23 @@
+# NotebookLM Cookies 定时任务配置
+
+# 每小时检查一次cookies状态，如果失效自动恢复
+0 * * * * /home/ropliu/.openclaw/workspace/spatial_agi/scripts/notebooklm_cookies_manager.sh auto >> /tmp/notebooklm_cookies.log 2>&1
+
+# 每天凌晨2点自动备份cookies（如果有效）
+0 2 * * * /home/ropliu/.openclaw/workspace/spatial_agi/scripts/notebooklm_cookies_manager.sh check && /home/ropliu/.openclaw/workspace/spatial_agi/scripts/notebooklm_cookies_manager.sh backup >> /tmp/notebooklm_cookies.log 2>&1
+
+# 说明：
+# 1. 第一个任务：每小时自动检查cookies，失效时自动恢复
+# 2. 第二个任务：每天凌晨2点备份有效的cookies
+# 3. 日志保存在 /tmp/notebooklm_cookies.log
+
+# 安装方法：
+# 1. 编辑crontab: crontab -e
+# 2. 将上述内容粘贴到文件末尾
+# 3. 保存并退出
+
+# 查看日志：
+# tail -f /tmp/notebooklm_cookies.log
+
+# 手动测试：
+# bash /home/ropliu/.openclaw/workspace/spatial_agi/scripts/notebooklm_cookies_manager.sh auto
