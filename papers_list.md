@@ -2,7 +2,101 @@
 
 ---
 
-## 📋 今日精选（2026-03-09）
+## 📋 今日精选（2026-03-10）
+
+### ✅ 全部完成（5/5）
+
+#### 1. Multimodal Behavior Tree Generation: A Small Vision-Language Model for Robot Task Planning
+
+- **arXiv ID**: 2603.06084v1
+- **发表日期**: 2026-03-06
+- **作者**: Cristiano Battistini, Zoltán Istenes, Luca Bortolussi, Emanuele Bastianelli
+- **文档路径**: `/home/ropliu/.openclaw/workspace/spatial_agi/papers/2026-03-10_01_Multimodal_Behavior_Tree_Generation.md`
+- **文档行数**: 1979行
+- **核心贡献**:
+  - BTGen框架 - 多模态VLM+行为树生成，支持复杂任务规划
+  - 两阶段流水线 - 阶段1生成高层抽象行为树，阶段2细化具体参数
+  - 小模型优势 - 3B参数vLLM，推理速度4x GPT-4V，成本降低100倍
+  - 实时规划 - 0.25秒完成完整规划，支持实时机器人控制
+  - 跨泛化 - 跨场景泛化，无需再训练
+  - 通用性 - 支持多种机器人平台和任务类型
+- **关键数据**: 3B参数，0.25秒推理，4x速度提升，100倍成本降低
+- **分析方法**: GLM WebReader (web_fetch)
+- **相关度**: ⭐⭐⭐⭐⭐（极高 - 机器人任务规划，小型VLM）
+
+#### 2. Spa3R: Predictive Spatial Field Modeling for 3D Visual Reasoning
+
+- **arXiv ID**: 2602.21186v1
+- **发表日期**: 2026-02-24
+- **作者**: Haoyi Jiang, Yi Jiang, Jingwen Chen, Xiaojian Ma, Tianhong Li, Zekai Lin, Xiaoyang Lyu, Dacheng Tao, Yanwei Fu
+- **文档路径**: `/home/ropliu/.openclaw/workspace/spatial_agi/papers/2026-03-10_02_Spa3R.md`
+- **文档行数**: 1297行
+- **核心贡献**:
+  - 预测性空间场建模（PSFM） - 信息瓶颈机制学习视图不变空间表示
+  - 空间表示与推理解耦 - 预训练编码器可即插即用集成到任意VLM
+  - 仅2D视觉的可行性 - 无需3D传感器或空间标注，大幅提升可扩展性
+  - 视图不变表示 - 内化完整3D几何和空间布局
+  - 跨基准泛化 - 在多个3D视觉推理基准上达到SOTA
+- **关键数据**: VSI-Bench 58.6%准确率，多基准SOTA
+- **分析方法**: GLM WebReader (web_fetch)
+- **相关度**: ⭐⭐⭐⭐⭐（极高 - 3D视觉推理，预测性空间场）
+
+#### 3. SGR3 Model: Scene Graph Retrieval-Reasoning Model in 3D
+
+- **arXiv ID**: 2603.04614v1
+- **发表日期**: 2026-03-04
+- **作者**: Zirui Wang, Yuxiao Lin, Lei Yang, Jianwen Chen
+- **文档路径**: `/home/ropliu/.openclaw/workspace/spatial_agi/papers/2026-03-10_03_SGR3_Model.md`
+- **文档行数**: 895行
+- **核心贡献**:
+  - 训练自由的3D场景图生成 - 结合MLLM+RAG，无需训练数据
+  - ColPali跨模态框架 - 检索语义对齐的场景图
+  - 加权patch级相似度 - 提高检索鲁棒性
+  - ColQwen关键帧过滤 - 防止对象重复检测
+  - 场景级聚合策略 - 生成完整场景图
+  - 知识库规模稳定性 - 25%-100%性能稳定，质量>数量
+- **关键数据**: 64.7%三元组直接来自参考，训练-free方法
+- **分析方法**: GLM WebReader (web_fetch)
+- **相关度**: ⭐⭐⭐⭐（高 - 3D场景图，检索-推理）
+
+#### 4. What if? Emulative Simulation with World Models for Situated Reasoning
+
+- **arXiv ID**: 2603.06445v1
+- **发表日期**: 2026-03-06
+- **作者**: Ruiping Liu, Yunshuang Li, Zixuan He, Tatsuya Harada
+- **文档路径**: `/home/ropliu/.openclaw/workspace/spatial_agi/papers/2026-03-10_04_What_if.md`
+- **文档行数**: 1358行
+- **核心贡献**:
+  - 想象力作为核心能力 - 模仿仿真模拟真实世界交互
+  - 世界模型驱动的推理 - 通过反事实思考进行情境推理
+  - Sim-to-Real迁移 - 无需真实数据，直接部署
+  - 跨场景泛化 - 适应多种环境
+  - 情境推理框架 - 支持"如果...会怎样？"的推理
+- **关键数据**: 多场景验证，Sim-to-Real迁移成功
+- **分析方法**: GLM WebReader (web_fetch)
+- **相关度**: ⭐⭐⭐⭐（高 - 世界模型，情境推理）
+
+#### 5. Universal Pose Pretraining for Generalizable Vision-Language-Action Policies
+
+- **arXiv ID**: 2602.19710v1
+- **发表日期**: 2026-02-23
+- **作者**: Haitao Lin, Xudong Jiang, Xiang Liu, Yikang Yang, Xitong Gao, Liang Zheng
+- **文档路径**: `/home/ropliu/.openclaw/workspace/spatial_agi/papers/2026-03-10_05_Universal_Pose.md`
+- **文档行数**: 2158行
+- **核心贡献**:
+  - 解耦学习范式 - 预训练（通用空间先验）+ 后训练（具身对齐）
+  - 离散姿态Token化 - 旋转、平移、尺度的统一表示
+  - 相机中心表示 - 统一观测和动作空间，促进跨具身泛化
+  - 跨数据源泛化 - 整合非机器人3D数据+机器人演示
+  - 避免特征坍缩 - 两阶段流水线确保空间表示质量
+  - 数据效率高 - 仅需100演示/任务
+- **关键数据**: RoboTwin 2.0 79.1%, LIBERO 96.0%, 真实世界83.75%
+- **分析方法**: GLM WebReader (web_fetch)
+- **相关度**: ⭐⭐⭐⭐⭐（极高 - 可泛化VLA策略，通用姿态预训练）
+
+---
+
+## 📋 昨日精选（2026-03-09）
 
 ### ✅ 全部完成（5/5）
 
