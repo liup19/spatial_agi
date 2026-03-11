@@ -2,6 +2,100 @@
 
 ---
 
+## 📋 今日精选（2026-03-11）
+
+### ✅ 部分完成（3/5，等待2篇）
+
+#### 1. EmbodiedSplat: Online Feed-Forward Semantic 3DGS for Open-Vocabulary 3D Scene Understanding
+
+- **arXiv ID**: 2603.04254v1
+- **发表日期**: 2026-03-04
+- **作者**: [待补充]
+- **文档路径**: `/home/ropliu/.openclaw/workspace/spatial_agi/papers/2026-03-11_01_EmbodiedSplat.md`
+- **文档行数**: 1379行
+- **核心贡献**:
+  - 稀疏系数场与CLIP全局码本 - 内存从2295MB降到148MB，保持完整语义
+  - 3D几何感知CLIP特征 - 3D U-Net聚合点云，补充2D特征
+  - 码本余弦相似度加速 - 14倍加速，5-6 FPS实时推理
+  - 2D-3D集成策略 - ScanNet 49.81 mIoU
+- **关键数据**: 148MB内存，14倍加速，5-6 FPS，49.81 mIoU
+- **分析方法**: GLM WebReader
+- **相关度**: ⭐⭐⭐⭐⭐（极高 - 实时3D场景理解，高效表示）
+
+#### 2. PROSPECT: Unified Streaming Vision-Language Navigation via Semantic-Spatial Fusion and Latent Predictive Representation
+
+- **arXiv ID**: 2603.03739v1
+- **发表日期**: 2026-03-04
+- **作者**: [待补充]
+- **文档路径**: `/home/ropliu/.openclaw/workspace/spatial_agi/papers/2026-03-11_02_PROSPECT_VLN.md`
+- **文档行数**: 1406行
+- **核心贡献**:
+  - 潜在空间预测表征 - 训练时预测特征，推理时零开销
+  - 绝对比例空间表示 - CUT3R的3D表示，长视界导航保持一致性
+  - 流因果注意力掩码 - 防止训练时信息泄露
+  - 真实机器人验证 - 多样化光照条件下鲁棒性
+- **关键数据**: ~4Hz推理，RxR显著提升
+- **分析方法**: GLM WebReader
+- **相关度**: ⭐⭐⭐⭐⭐（极高 - 流式VLN，预测性表征）
+
+#### 3. Spa3R: Predictive Spatial Field Modeling for 3D Visual Reasoning
+
+- **arXiv ID**: 2602.21186v1
+- **发表日期**: 2026-02-24
+- **作者**: Haoyi Jiang, Yi Jiang, Jingwen Chen, Xiaojian Ma, Tianhong Li, Zekai Lin, Xiaoyang Lyu, Dacheng Tao, Yanwei Fu
+- **文档路径**: `/home/ropliu/.openclaw/workspace/spatial_agi/papers/2026-03-11_03_Spa3R.md`
+- **文档行数**: 1566行
+- **核心贡献**:
+  - 预测性空间场建模（PSFM）- 信息瓶颈机制，视图不变空间表示
+  - 空间表示与推理解耦 - 预训练编码器即插即用集成
+  - 仅2D视觉的可行性 - 无需3D传感器，大幅提升可扩展性
+  - 视图不变表示 - 内化完整3D几何和空间布局
+- **关键数据**: VSI-Bench 58.6%准确率，多基准SOTA
+- **分析方法**: GLM WebReader
+- **相关度**: ⭐⭐⭐⭐⭐（极高 - 3D视觉推理，预测性空间场）
+
+#### 4. ViSA-Enhanced Aerial VLN: A Visual-Spatial Reasoning Enhanced Framework for Aerial Vision-Language Navigation
+
+- **arXiv ID**: 2603.08007v1
+- **发表日期**: 2026-03-09
+- **作者**: Haoyu Tong, Xiangyu Dong, Xiaoguang Ma, Haoran Zhao, Yaoming Zhou, Chenghao Lin
+- **文档路径**: `/home/ropliu/.openclaw/workspace/spatial_agi/papers/2026-03-11_04_ViSA_Aerial_VLN.md`
+- **文档行数**: 3371行
+- **核心贡献**:
+  - 三阶段协作架构 - Perception（感知）→ Verification（验证）→ Execution（执行）
+  - Visual Prompt Generator - SoM标注生成结构化视觉表示
+  - Three-Stage Verification - 显式空间验证推理
+  - Semantic-Motion Decoupled Executor - 语义决策与运动控制解耦
+  - 零样本超越监督 - ViSA零样本36.11% vs FlightGPT完全训练21.20%
+- **关键数据**: CityNav Test-Unseen 36.11%，零样本超越监督方法70.3%
+- **分析方法**: GLM WebReader
+- **相关度**: ⭐⭐⭐⭐⭐（极高 - 空间推理增强，空中VLN）
+
+#### 5. Boosting MLLM Spatial Reasoning with Geometrically Referenced 3D Scene Representations
+
+- **arXiv ID**: 2603.08592v1
+- **发表日期**: 2026-03-09
+- **作者**: [待补充]
+- **文档路径**: `/home/ropliu/.openclaw/workspace/spatial_agi/papers/2026-03-11_05_MLLM_Spatial_Reasoning.md`
+- **文档行数**: 3035行
+- **核心贡献**:
+  - GR3D表示 - 将3D几何信息编码为文本引用，通过对象ID与图像显式关联
+  - 技术方法 - 神经3D重建 → 语义分割 → 几何属性提取 → 文本引用生成 → 图像标注
+  - 关键创新 - 利用MLLM的语言推理能力处理3D空间问题，无需额外训练
+  - 模块化设计 - 深度基础的遮挡处理、灵活的几何细节、语言驱动推理
+- **关键数据**: 文本化空间表示，零样本泛化，稀疏视图鲁棒性
+- **分析方法**: GLM WebReader
+- **相关度**: ⭐⭐⭐⭐⭐（极高 - 几何参考3D表示，MLLM空间推理）
+
+---
+
+**统计**:
+- 论文数量: 5篇
+- 总文档行数: 10757行（平均2151行/篇）
+- 分析方法: GLM WebReader（NotebookLM认证失败）
+
+---
+
 ## 📋 今日精选（2026-03-10）
 
 ### ✅ 全部完成（5/5）
