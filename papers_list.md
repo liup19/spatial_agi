@@ -2,6 +2,99 @@
 
 ---
 
+## 📋 今日精选（2026-03-12）
+
+### ✅ 全部完成（5/5）
+
+#### 1. Spatial Colour Mixing Illusions as a Perception Stress Test for Vision-Language Models
+
+- **arXiv ID**: 2603.06141v1
+- **发表日期**: 2026-03-06
+- **作者**: [待补充]
+- **文档路径**: `/home/ropliu/.openclaw/workspace/spatial_agi/papers/2026-03-12_01_Spatial_Colour_Mixing_Illusions.md`
+- **文档行数**: 2025行
+- **核心贡献**:
+  - 感知压力测试 - 评估VLM对空间色彩混合错觉的鲁棒性
+  - 30种错觉测试 - 系统评估VLM的空间感知能力
+  - 模型规模分析 - 2B→32B→3B模型性能对比
+  - 跨泛化验证 - 验证VLM在不同模型上的表现
+- **关键数据**: 30种错觉测试，3种模型规模
+- **分析方法**: GLM WebReader
+- **相关度**: ⭐⭐⭐⭐⭐（极高 - VLM感知测试，空间推理评估）
+
+#### 2. Direct Contact-Tolerant Motion Planning With Vision Language Models
+
+- **arXiv ID**: 2603.05017v1
+- **发表日期**: 2026-03-05
+- **作者**: [待补充]
+- **文档路径**: `/home/ropliu/.openclaw/workspace/spatial_agi/papers/2026-03-12_Direct_Contact_Tolerant_Motion_Planning.md`
+- **文档行数**: 1319行
+- **核心贡献**:
+  - DCT系统架构 - VPP（VLM驱动的障碍物过滤）+ VGN（学习距离计算）
+  - 记忆传播机制 - 实现长时间记忆和场景连贯性
+  - 三阶段流程 - 障碍物过滤→掩码生成→运动规划
+  - 在线纠正机制 - 实时点纠正，适应动态环境
+- **关键数据**: GPT-5表现最优，真实机器人验证
+- **分析方法**: GLM WebReader
+- **相关度**: ⭐⭐⭐⭐⭐（极高 - VLM运动规划，接触容忍）
+
+#### 3. Behavior-Aware Anthropometric Scene Generation for Human-Usable 3D Layouts
+
+- **arXiv ID**: 2603.02662v1
+- **发表日期**: 2026-03-03
+- **作者**: [待补充]
+- **文档路径**: `/home/ropliu/.openclaw/workspace/spatial_agi/papers/2026-03-12_01_Behavior_Aware_Scene_Generation.md`
+- **文档行数**: 1363行
+- **核心贡献**:
+  - 两阶段框架 - 语义和行为表示 + 约束导向布局生成
+  - VLM行为-空间映射 - 将行为映射到空间布局
+  - 人体测量集成 - 确保真实人体尺度
+  - 可微优化 - 4分钟内微调到目标约束
+- **关键数据**: 4分钟微调，100%人体工效满足率
+- **分析方法**: GLM WebReader
+- **相关度**: ⭐⭐⭐⭐⭐（极高 - 行为感知，3D布局生成）
+
+#### 4. VLM-Loc: Localization in Point Cloud Maps via Vision-Language Models
+
+- **arXiv ID**: 2603.09826v1
+- **发表日期**: 2026-03-10
+- **作者**: [待补充]
+- **文档路径**: `/home/ropliu/.openclaw/workspace/spatial_agi/papers/2026-03-12_01_VLM_Loc.md`
+- **文档行数**: 1023行
+- **核心贡献**:
+  - BEV图像+场景图双表示 - 融合视觉和空间信息
+  - 部分节点分配（PNA） - 实现可解释空间推理
+  - 参数高效微调 - 2B模型实现零样本定位
+  - CityLoc基准 - 评估复杂场景精细定位
+- **关键数据**: Recall@5m提升14.20%，PNA机制提升18%
+- **分析方法**: GLM WebReader
+- **相关度**: ⭐⭐⭐⭐⭐（极高 - VLM定位，点云地图）
+
+#### 5. Spherical-GOF: Geometry-Aware Panoramic Gaussian Opacity Fields for 3D Scene Reconstruction
+
+- **arXiv ID**: 2603.08503v1
+- **发表日期**: 2026-03-09
+- **作者**: [待补充]
+- **文档路径**: `/home/ropliu/.openclaw/workspace/spatial_agi/papers/2026-03-12_01_Spherical_GOF.md`
+- **文档行数**: 2245行
+- **核心贡献**:
+  - 球形光线空间GOF - 避免平面投影的局部线性化误差
+  - 保守球形边界策略 - 高效的光线-高斯剔除
+  - 球形过滤方案 - 适应全景像素采样
+  - 全景感知几何正则化 - 深度-法线一致性、深度跳跃正则化
+- **关键数据**: DRE降低57%，CIR提高21%，旋转鲁棒性90°仅降7%
+- **分析方法**: GLM WebReader
+- **相关度**: ⭐⭐⭐⭐⭐（极高 - 全景3D重建，几何感知）
+
+---
+
+**统计**:
+- 论文数量: 5篇
+- 总文档行数: 7975行（平均1595行/篇）
+- 分析方法: GLM WebReader（NotebookLM认证失败）
+
+---
+
 ## 📋 今日精选（2026-03-11）
 
 ### ✅ 部分完成（3/5，等待2篇）
