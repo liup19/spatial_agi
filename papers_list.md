@@ -2,6 +2,104 @@
 
 ---
 
+## 📋 今日精选（2026-03-13）
+
+### ✅ 全部完成（5/5）
+
+#### 1. OmniStream: Mastering Perception, Reconstruction and Action in Continuous Streams
+
+- **arXiv ID**: 2603.12265v1
+- **发表日期**: 2026-03-12
+- **作者**: Yibin Yan, Jilan Xu, Shangzhe Di, Haoning Wu, Weidi Xie
+- **文档路径**: `/home/ropliu/.openclaw/workspace/spatial_agi/papers/2026-03-13_01_OmniStream.md`
+- **文档行数**: 944行
+- **核心贡献**:
+  - 统一流式视觉主干 - 融合感知、重建、行动
+  - 因果时空注意力 + 3D-RoPE - 高效帧级在线处理
+  - 持久化KV-cache机制 - O(T)复杂度，避免重新计算
+  - 多任务预训练框架 - 29个数据集，协同效应验证
+  - 零样本机器人操纵 - 在训练时未见任务上表现优异
+- **关键数据**: 2亿帧预训练，15倍推理加速，CALVIN零样本超越监督60%
+- **分析方法**: GLM WebReader
+- **相关度**: ⭐⭐⭐⭐⭐（极高 - 流式视觉，统一架构，机器人应用）
+
+#### 2. The Latent Color Subspace: Emergent Order in High-Dimensional Chaos
+
+- **arXiv ID**: 2603.12261v1
+- **发表日期**: 2026-03-12
+- **作者**: Mateusz Pach, Jessica Bader, Quentin Bouniot, Serge Belongie, Zeynep Akata
+- **文档路径**: `/home/ropliu/.openclaw/workspace/spatial_agi/papers/2026-03-13_02_Latent_Color_Subspace.md`
+- **文档行数**: 2676行
+- **核心贡献**:
+  - Latent Color Subspace (LCS) 理论 - VAE潜在空间中的HSL结构
+  - 双锥体结构 - Hue在环面，Saturation和Lightness在锥体
+  - 100%方差解释 - PCA发现LCS解释了颜色表示的所有方差
+  - 闭环式潜在空间操作 - Type I/II干预和插值
+  - 无训练颜色控制 - 零成本、即时适应、完全可解释
+- **关键数据**: 100%方差解释，双锥体结构，HSL→LCS映射精度
+- **分析方法**: GLM WebReader
+- **相关度**: ⭐⭐⭐⭐⭐（极高 - 潜在空间解释，涌现秩序，可解释性）
+
+#### 3. Spatial-TTT: Streaming Visual-based Spatial Intelligence with Test-Time Training
+
+- **arXiv ID**: 2603.12255v1
+- **发表日期**: 2026-03-12
+- **作者**: Fangfu Liu, Diankun Wu, Jiawei Chi, Yimo Cai, Yi-Hsin Hung, Xumin Yu, Hao Li, Han Hu, Yongming Rao, Yueqi Duan
+- **文档路径**: `/home/ropliu/.openclaw/workspace/spatial_agi/papers/2026-03-13_03_Spatial_TTT.md`
+- **文档行数**: 3696行
+- **核心贡献**:
+  - Test-Time Training (TTT) 机制 - 快速权重作为非线性记忆
+  - 混合架构设计 - TTT层与注意力层3:1交错
+  - 大块更新 + 滑动窗口注意力 - 并行高效处理
+  - 空间预测机制 - 3D时空卷积捕获几何对应
+  - 密集3D空间描述数据集 - 指导模型结构化记忆
+- **关键数据**: VSI-Bench SOTA，3D卷积提升4.6%，长视频持续改进
+- **分析方法**: GLM WebReader
+- **相关度**: ⭐⭐⭐⭐⭐（极高 - 流式空间智能，测试时训练，长时记忆）
+
+#### 4. EndoCoT: Scaling Endogenous Chain-of-Thought Reasoning in Diffusion Models
+
+- **arXiv ID**: 2603.12252v1
+- **发表日期**: 2026-03-12
+- **作者**: Xuanlang Dai, Yujie Zhou, Long Xing, Jiazi Bu, Xilin Wei, Yuhong Liu, Beichen Zhang, Kai Chen, Yuhang Zang
+- **文档路径**: `/home/ropliu/.openclaw/workspace/spatial_agi/papers/2026-03-13_04_EndoCoT.md`
+- **文档行数**: 1927行
+- **核心贡献**:
+  - Endogenous Chain-of-Thought (EndoCoT) 框架 - 迭代精炼思维状态
+  - 迭代思维引导模块 - 递归精炼MLLM潜在状态
+  - DiT去噪过程桥接 - 每个推理步骤包含完整去噪轨迹
+  - 终端思维锚定模块 - L2语义损失对齐最终状态
+  - 渐进式训练策略 - 推理发展 + 终端巩固两阶段
+- **关键数据**: 四个基准平均92.1%，Maze-32提升25%（90% vs 65%）
+- **分析方法**: GLM WebReader
+- **相关度**: ⭐⭐⭐⭐⭐（极高 - 思维链推理，扩散模型，复杂任务分解）
+
+#### 5. SciMDR: Benchmarking and Advancing Scientific Multimodal Document Reasoning
+
+- **arXiv ID**: 2603.12249v1
+- **发表日期**: 2026-03-12
+- **作者**: Ziyu Chen, Yilun Zhao, Chengye Wang, Rilyn Han, Manasi Patwardhan, Arman Cohan
+- **文档路径**: `/home/ropliu/.openclaw/workspace/spatial_agi/papers/2026-03-13_05_SciMDR.md`
+- **文档行数**: 1438行
+- **核心贡献**:
+  - Synthesize-and-Reground框架 - 解耦保真度与现实主义
+  - Claim-Centric QA Synthesis - 声明中心化，向后构造
+  - Document-Scale Regrounding - 信息定位注入
+  - SciMDR数据集 - 300K QA对，20K论文
+  - SciMDR-Eval基准 - 907专家标注，5种推理类型
+- **关键数据**: 300K QA对，20K论文，5种推理类型，复杂文档级推理提升
+- **分析方法**: GLM WebReader
+- **相关度**: ⭐⭐⭐⭐⭐（极高 - 科学文档推理，多模态理解，基准构建）
+
+---
+
+**统计**:
+- 论文数量: 5篇
+- 总文档行数: 10681行（平均2136行/篇）
+- 分析方法: GLM WebReader（NotebookLM认证失效）
+
+---
+
 ## 📋 今日精选（2026-03-12）
 
 ### ✅ 全部完成（5/5）
