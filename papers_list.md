@@ -2,6 +2,97 @@
 
 ---
 
+## 📋 今日精选（2026-03-14）
+
+### ✅ 全部完成（5/5）
+
+#### 1. Spatial-TTT: Streaming Visual-based Spatial Intelligence with Test-Time Training
+
+- **arXiv ID**: 2603.12255v1
+- **发表日期**: 2026-03-12
+- **作者**: Fangfu Liu, Diankun Wu, Jiawei Chi, Yimo Cai, Yi-Hsin Hung, Xumin Yu, Hao Li, Han Hu, Yongming Rao, Yueqi Duan
+- **文档路径**: `/home/ropliu/.openclaw/workspace/spatial_agi/papers/2026-03-14_01_Spatial-TTT.md`
+- **文档行数**: 1,600行
+- **核心贡献**:
+  - 测试时训练空间智能 - 首次将TTT应用于流式空间智能
+  - 混合记忆架构 - 滑动窗口注意力（短期）+ 大块更新（长期）
+  - 空间预测机制 - 3D时空卷积驱动高质量空间表征
+  - 密集3D空间描述数据集 - 引导结构化记忆
+  - 生物学习相似性 - 快速权重记忆 ≈ 突触可塑性
+- **关键数据**: 混合架构、快速权重（10-20%参数）、视频空间基准SOTA
+- **分析方法**: GLM WebReader
+- **相关度**: ⭐⭐⭐⭐⭐（极高 - 流式空间智能，测试时训练，实时适应）
+
+#### 2. MM-CondChain: A Programmatically Verified Benchmark for Visually Grounded Deep Compositional Reasoning
+
+- **arXiv ID**: 2603.12266v1
+- **发表日期**: 2026-03-12
+- **作者**: [查看论文]
+- **文档路径**: `/home/ropliu/.openclaw/workspace/spatial_agi/papers/2026-03-14_02_MM-CondChain.md`
+- **文档行数**: 2,364行
+- **核心贡献**:
+  - VPIR可验证中间表示 - 逻辑与表示分离，机械可验证性
+  - 深度组合推理基准 - 多层推理链，最佳模型仅53.33 F1
+  - 代理合成管道 - Planner + Verifier + Composer
+  - 成对硬负样本 - 揭示系统偏差（10-20% vs 80-90%）
+  - 域无关框架 - 核心组件域无关，适配器层隔离域特定代码
+- **关键数据**: 520个样本，10个学术域，深度/复杂性正交挑战
+- **分析方法**: GLM WebReader
+- **相关度**: ⭐⭐⭐⭐⭐（极高 - 组合推理，验证基准，程序化表示）
+
+#### 3. VST: Video Streaming Thinking - VideoLLMs Can Watch and Think Simultaneously
+
+- **arXiv ID**: 2603.12262v1
+- **发表日期**: 2026-03-12
+- **作者**: [查看论文]
+- **文档路径**: `/home/ropliu/.openclaw/workspace/spatial_agi/papers/2026-03-14_03_VST.md`
+- **文档行数**: 1,443行
+- **核心贡献**:
+  - 流式思考范式 - "边看边想"（thinking while watching）
+  - 双记忆系统 - 短期视觉缓冲（8,192 token）+ 长期语义记忆（FIFO）
+  - 查询前推理 - 改变问题框架，15.7×速度提升
+  - 两阶段训练 - VST-SFT（记忆机制）+ VST-RL（预测机制）
+  - 知识图谱数据合成 - 100K高质量样本，实体-关系建模
+- **关键数据**: StreamingBench 79.5%（超越GPT-4o 73.3%），响应0.56s（Video-R1 8.80s）
+- **分析方法**: GLM WebReader
+- **相关度**: ⭐⭐⭐⭐⭐（极高 - 流式推理，双记忆系统，时间-质量平衡）
+
+#### 4. EVATok: Adaptive Length Video Tokenization for Efficient Visual Autoregressive Generation
+
+- **arXiv ID**: 2603.12267v1
+- **发表日期**: 2026-03-12
+- **作者**: Tianwei Xiong, [查看论文]
+- **文档路径**: `/home/ropliu/.openclaw/workspace/spatial_agi/papers/2026-03-14_04_EVATok.md`
+- **文档行数**: 780行
+- **核心贡献**:
+  - 自适应token分配 - 动态分配token到复杂片段，节省24.4%
+  - Proxy Reward指标 - 量化质量-成本权衡，R_proxy = w_q × Q - w_l × L
+  - 四阶段框架 - 代理tokenizer → 搜索最优分配 → 训练路由器 → 自适应tokenizer
+  - 训练-推理一致性 - 消除差距，避免tokenizer在推理时退化
+  - 视频语义编码器双重作用 - 表示对齐 + 语义判别器
+- **关键数据**: UCF-101重建token节省24.4%，rFVD 4.0（SOTA 5.1），WebVid-10M节省29.6%
+- **分析方法**: GLM WebReader
+- **相关度**: ⭐⭐⭐⭐（高 - 自适应资源分配，视频tokenization，效率优化）
+
+#### 5. DreamVideo-Omni: Omni-Motion Controlled Multi-Subject Video Customization
+
+- **arXiv ID**: 2603.12257v1
+- **发表日期**: 2026-03-12
+- **作者**: Yujie Wei, Xinyu Liu, Shiwei Zhang, [查看论文]
+- **文档路径**: `/home/ropliu/.openclaw/workspace/spatial_agi/papers/2026-03-14_05_DreamVideo-Omni.md`
+- **文档行数**: 1,148行
+- **核心贡献**:
+  - 渐进式两阶段训练 - 全向运动微调 + 潜在身份强化学习
+  - 条件感知3D RoPE - 异构输入（视频帧、参考图像、轨迹）统一处理
+  - 潜在身份奖励模型（LIRM） - 运动感知的身份一致性评估
+  - 潜在身份奖励反馈学习（LIReFL） - 潜在空间RL，避免昂贵VAE解码
+  - 全向运动控制 - 全局运动、局部动态、相机移动多粒度控制
+- **关键数据**: 2M视频数据集，DreamOmni Bench 1K+样本，潜在空间RL计算效率
+- **分析方法**: GLM WebReader
+- **相关度**: ⭐⭐⭐⭐（高 - 多主体视频生成，全向控制，潜在空间RL）
+
+---
+
 ## 📋 今日精选（2026-03-13）
 
 ### ✅ 全部完成（5/5）
