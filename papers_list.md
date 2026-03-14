@@ -2,6 +2,98 @@
 
 ---
 
+## 📋 今日精选（2026-03-15）
+
+### ✅ 全部完成（5/5）
+
+#### 1. AutoGaze: Attend Before Attention - Efficient and Scalable Video Understanding via Autoregressive Gazing
+
+- **arXiv ID**: 2603.12254v1
+- **发表日期**: 2026-03-12
+- **作者**: Baifeng Shi, Stephan Fu, Long Lian, Hanrong Ye, David Eigen, Aaron Reite, Boyi Li, Jan Kautz, Song Han, David M. Chan, Pavlo Molchanov, Trevor Darrell, Hongxu Yin
+- **文档路径**: `/home/ropliu/.openclaw/workspace/spatial_agi/papers/2026-03-15_01_AutoGaze.md`
+- **文档行数**: 1,252行
+- **核心贡献**:
+  - 自回归视觉注视机制 - 逐帧解码patch索引，智能移除冗余
+  - 两阶段训练 - 下一个token预测预训练 + 强化学习后训练
+  - 多尺度注视支持 - 4个尺度，根据区域细节自适应选择
+  - 重建损失驱动 - 基于重建质量自动决定何时停止采样
+  - 轻量级设计 - 仅3M参数，可扩展到4K 1K帧
+- **关键数据**: 4×-100× token减少，19× ViT加速，VideoMME 67.0%
+- **分析方法**: GLM WebReader
+- **相关度**: ⭐⭐⭐⭐⭐（极高 - 自回归注视，高效视频理解，主动感知）
+
+#### 2. ELIT: One Model, Many Budgets - Elastic Latent Interfaces for Diffusion Transformers
+
+- **arXiv ID**: 2603.12245v1
+- **发表日期**: 2026-03-12
+- **作者**: Moayed Haji-Ali, Hongfei Zhang, Harold Chen, Chenfei Liao, Jing He, Zixin Zhang, Haodong Li, Yihao Liang, Kanghao Chen, Bin Ren, Xu Zheng, Shuai Yang, Kun Zhou, Yinchuan Li, Nicu Sebe, Ying-Cong Chen
+- **文档路径**: `/home/ropliu/.openclaw/workspace/spatial_agi/papers/2026-03-15_02_ELIT.md`
+- **文档行数**: 1,921行
+- **核心贡献**:
+  - 弹性潜在接口 - 可变长度潜在token集合，支持动态计算预算
+  - Read/Write机制 - 双向交叉注意力移动信息，优先考虑困难区域
+  - 重要性排序训练 - 随机丢弃尾部token，迫使模型在早期token存储最重要信息
+  - 多预算单一模型 - 16-60个不同预算，无需训练多个模型
+  - 自动引导 - 弱模型版本高效引导，减少33%推理成本
+- **关键数据**: ImageNet-1K 512px: FID降低40%，FDD降低58%；训练加速3.3-4.0×
+- **分析方法**: GLM WebReader
+- **相关度**: ⭐⭐⭐⭐⭐⭐（极高 - 资源自适应，弹性接口，多预算架构）
+
+#### 3. DVD: Deterministic Video Depth Estimation with Generative Priors
+
+- **arXiv ID**: 2603.12250v1
+- **发表日期**: 2026-03-12
+- **作者**: Hongfei Zhang, Harold Haodong Chen, Chenfei Liao, Jing He, Zixin Zhang, Haodong Li, Yihao Liang, Kanghao Chen, Bin Ren, Xu Zheng, Shuai Yang, Kun Zhou, Yinchuan Li, Nicu Sebe, Ying-Cong Chen
+- **文档路径**: `/home/ropliu/.openclaw/workspace/spatial_agi/papers/2026-03-15_03_DVD.md`
+- **文档行数**: 1,705行
+- **核心贡献**:
+  - 确定性深度估计 - 将视频扩散模型适配为单次深度回归器
+  - 扩散时间步锚点 - 重新利用时间步参数平衡全局稳定性和高频细节
+  - 潜在流形校正（LMR）- 微分约束缓解过度平滑，恢复锐利边界
+  - 全局仿射相干性 - 固有属性限制窗口间发散，实现无缝长视频推理
+  - 数据效率革命 - 163×数据效率，约6000样本 vs 100万+样本
+- **关键数据**: SOTA零样本性能，完全开源，HLVid提升42.5%
+- **分析方法**: GLM WebReader
+- **相关度**: ⭐⭐⭐⭐⭐（极高 - 确定性深度估计，生成先验，零样本泛化）
+
+#### 4. FIRM: Robust Reward Modeling and Reinforcement Learning for Faithful Image Editing and Generation
+
+- **arXiv ID**: 2603.12247v1
+- **发表日期**: 2026-03-12
+- **作者**: [查看论文]
+- **文档路径**: `/home/ropliu/.openclaw/workspace/spatial_agi/papers/2026-03-15_04_FIRM.md`
+- **文档行数**: 2,214行
+- **核心贡献**:
+  - 鲁棒奖励建模框架 - 提供准确可靠的奖励模型指导强化学习
+  - FIRM-Edit管道 - "difference-first"方法，执行力和一致性双维度评估
+  - FIRM-Gen管道 - "plan-then-score"方法，检查表策略
+  - Base-and-Bonus策略 - CME（一致性调制执行）× QMA（质量调制对齐），乘法耦合防止奖励黑客
+  - 专用奖励模型 - FIRM-Edit-8B和FIRM-Gen-8B在专用数据训练，超越GPT-5和Qwen3-VL-235B
+  - 全面基准测试 - FIRM-Bench全面评估编辑和生成能力
+- **关键数据**: 推理差距36.2%，一致性差距37.1%；FIRM-Qwen-Edit超越GPT-5
+- **分析方法**: GLM WebReader
+- **相关度**: ⭐⭐⭐⭐⭐（极高 - 奖励建模，强化学习， faithful生成）
+
+#### 5. GRADE: Benchmarking Discipline-Informed Reasoning in Image Editing
+
+- **arXiv ID**: 2603.12264v1
+- **发表日期**: 2026-03-12
+- **作者**: Mingxin Liu, Ziqian Fan, Zhaokai Wang, Leyao Gu, Zirun Zhu, Yiguo He, Yuchen Yang, Changyao Tian, Xiangyu Zhao, Ning Liao, Shaofeng Zhang, Qibing Ren, Zhihang Zhong, Xuanhe Zhou, Junchi Yan, Xue Yang
+- **文档路径**: `/home/ropliu/.openclaw/workspace/spatial_agi/papers/2026-03-15_05_GRADE.md`
+- **文档行数**: 2,088行
+- **核心贡献**:
+  - 学科知识密集型图像编辑基准 - 520个样本，10个学术域
+  - 多维度评估协议 - 学科推理（60%）+ 视觉一致性（30%）+ 逻辑可读性（10%）
+  - 数据构建管道 - 执行力/一致性双维度评估
+  - 揭示推理瓶颈 - 最佳模型仅77.5%推理得分，开源模型仅18.6%
+  - 视觉与推理解离 - 模型"看起来专业"但学科知识经常出错
+- **关键数据**: 严格准确率远低于单项得分；推理差距36.2%（专有 vs 开源）
+- **分析方法**: GLM WebReader
+- **相关度**: ⭐⭐⭐⭐（高 - 学科知识推理，多维评估，图像编辑基准）
+
+---
+
 ## 📋 今日精选（2026-03-14）
 
 ### ✅ 全部完成（5/5）
