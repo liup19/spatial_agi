@@ -2,6 +2,96 @@
 
 ---
 
+## 📋 今日精选（2026-03-16）
+
+### ✅ 全部完成（5/5）
+
+#### 1. OmniStream: Mastering Perception, Reconstruction and Action in Continuous Streams
+
+- **arXiv ID**: 2603.12265v1
+- **发表日期**: 2026-03-12
+- **作者**: Yibin Yan, Jilan Xu, Shangzhe Di, Haoning Wu, Weidi Xie
+- **文档路径**: `/home/ropliu/.openclaw/workspace/spatial_agi/papers/2026-03-16_omnistream.md`
+- **文档行数**: 3,598行
+- **核心贡献**:
+  - 统一流式视觉骨干网络 - 语义感知、时序建模、空间几何三合一
+  - 因果时空注意力 + 3D-RoPE + KV-Cache - 实时流式推理，零样本长度外推（16帧→110帧）
+  - 协同多任务训练 - 静态+时序表征学习 + 流式几何重建 + 视觉-语言对齐（29个数据集）
+  - 冻结骨干泛化 - 跨语义、空间、时序推理的统一能力
+- **关键数据**: VSI-Bench 70.6% (SOTA), CALVIN 3.885 (冻结骨干接近全微调), T=64时15×加速
+- **分析方法**: GLM WebReader
+- **相关度**: ⭐⭐⭐⭐⭐⭐（极高 - 统一流式表征，因果时空注意力，多任务协同）
+
+#### 2. The Latent Color Subspace: Emergent Order in High-Dimensional Chaos
+
+- **arXiv ID**: 2603.12261v1
+- **发表日期**: 2026-03-12
+- **作者**: Mateusz Pach, Jessica Bader, Quentin Bouniot, Serge Belongie, Zeynep Akata
+- **文档路径**: `/home/ropliu/.openclaw/workspace/spatial_agi/papers/2026-03-16_latent_color_subspace.md`
+- **文档行数**: 2,308行
+- **核心贡献**:
+  - 发现FLUX潜在空间的3D颜色子空间（LCS）- 通过PCA揭示颜色信息被限制在3D子空间
+  - 几何解释 - LCS形成类似HSL的双锥结构，与Hue, Saturation, Lightness显式映射
+  - 训练无关的颜色观察 - t=20时预测误差ΔE00≤21
+  - 训练无关的颜色干预 - 准确性从9%提升到73%，色相控制ΔH=11° vs 提示词38°
+  - 分层空间控制 - 全局、对象、补丁三层控制，结构保持IOU=0.88
+- **关键数据**: 颜色干预准确性73% vs 提示词79%，色相精度11° vs 38°，结构保持0.88 vs 0.60
+- **分析方法**: GLM WebReader
+- **相关度**: ⭐⭐⭐⭐（高 - 潜在空间解释，训练无关控制，几何映射）
+
+#### 3. Spatial-TTT: Streaming Visual-based Spatial Intelligence with Test-Time Training
+
+- **arXiv ID**: 2603.12255v1
+- **发表日期**: 2026-03-12
+- **作者**: Fangfu Liu, Diankun Wu, Jiawei Chi, Yimo Cai, Yi-Hsin Hung, Xumin Yu, Hao Li, Han Hu, Yongming Rao, Yueqi Duan
+- **文档路径**: `/home/ropliu/.openclaw/workspace/spatial_agi/papers/2026-03-16_spatial_ttt.md`
+- **文档行数**: 1,885行
+- **核心贡献**:
+  - 混合TTT架构 - 3:1交错TTT层与标准层，大块更新 + 滑动窗口注意力
+  - 空间预测机制 - 3D卷积应用于TTT层，鼓励模型捕获几何对应和时序连续性
+  - Muon更新规则 - 高效快速权重更新，内存和计算效率减少40%+
+  - 密集3D空间描述数据集 - 指导模型以结构化方式记忆和组织全局3D空间信号
+  - 流式空间证据组织 - 长场景视频中空间信息的动态选择、组织和保留
+- **关键数据**: VSI-Bench 64.4 Avg. (2B模型SOTA), MindCube-Tiny 76.2% ACC, VSI-SUPER显著优于所有基线
+- **分析方法**: GLM WebReader
+- **相关度**: ⭐⭐⭐⭐⭐（极高 - 测试时训练，流式空间推理，长期记忆）
+
+#### 4. EndoCoT: Scaling Endogenous Chain-of-Thought Reasoning in Diffusion Models
+
+- **arXiv ID**: 2603.12252v1
+- **发表日期**: 2026-03-12
+- **作者**: Xuanlang Dai, Yujie Zhou, Long Xing, Jiazi Bu, Xilin Wei, Yuhong Liu, Beichen Zhang, Kai Chen, Yuhang Zang
+- **文档路径**: `/home/ropliu/.openclaw/workspace/spatial_agi/papers/2026-03-16_endocot.md`
+- **文档行数**: 4,300行
+- **核心贡献**:
+  - 迭代思想指导 - MLLM迭代优化潜在思想状态，激活链式思维过程
+  - 终端思想Grounding - 对齐最终状态与真实答案，确保推理轨迹 grounded 在文本监督中
+  - 两阶段训练 - 先发展推理能力后优化输出，避免冲突梯度
+  - 隐式Token - 连续潜在向量优于显式离散Token
+  - 渐进式推理 - MLLM提供细致推理，DiT逐步执行
+- **关键数据**: 平均准确率92.1%（比最强基线提升8.3%），Maze-32: 90% vs 65%, Sudoku-35: 95% vs 55%
+- **分析方法**: GLM WebReader
+- **相关度**: ⭐⭐⭐⭐⭐（极高 - 扩散模型推理，链式思维，内生推理）
+
+#### 5. SciMDR: Benchmarking and Advancing Scientific Multimodal Document Reasoning
+
+- **arXiv ID**: 2603.12249v1
+- **发表日期**: 2026-03-12
+- **作者**: Ziyu Chen, Yilun Zhao, Chengye Wang, Rilyn Han, Manasi Patwardhan, Arman Cohan
+- **文档路径**: `/home/ropliu/.openclaw/workspace/spatial_agi/papers/2026-03-16_scimdr.md`
+- **文档行数**: 4,684行
+- **核心贡献**:
+  - 合成-重定位框架 - (1) 声明中心QA合成，(2) 文档级重定位
+  - 声明中心机制 - 确保数据质量的 faithful + isolated QA pairs
+  - 文档级重定位 - 以真实复杂度重新嵌入到完整文档任务
+  - SciMDR数据集 - 300K QA对，20K科学论文，显式推理链
+  - SciMDR-Eval基准 - 专家标注907个QA对，评估完整科学工作流中的多模态理解
+- **关键数据**: SciMDR数据集300K QA对，7B模型微调后达到GPT-5.2水平（49.1 vs 49.9分）
+- **分析方法**: GLM WebReader
+- **相关度**: ⭐⭐⭐⭐（高 - 科学文档推理，多模态理解，合成-重定位框架）
+
+---
+
 ## 📋 今日精选（2026-03-15）
 
 ### ✅ 全部完成（5/5）
