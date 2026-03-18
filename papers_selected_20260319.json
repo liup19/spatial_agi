@@ -1,0 +1,59 @@
+[
+  {
+    "title": "Interactive Autoregressive 3D Gaming Worlds with Camera Pose as a Unifying Geometric Representation",
+    "arxiv_id": "2603.16871v1",
+    "abs_url": "https://arxiv.org/abs/2603.16871v1",
+    "pdf_url": "https://arxiv.org/pdf/2603.16871v1",
+    "html_url": "https://arxiv.org/html/2603.16871v1",
+    "authors": ["Jisu Nam", "Yicong Hong", "Chun-Hao Paul Huang", "Feng Liu", "JoungBin Lee", "Jiyoung Kim", "Siyoon Jin", "Yunsung Lee", "Jaeyoon Jung", "Suhwan Choi", "Seungryong Kim", "Yang Zhou"],
+    "published": "2026-03-17",
+    "summary": "Recent advances in video diffusion transformers have enabled interactive gaming world models that allow users to explore generated environments over extended horizons. However, existing approaches struggle with precise action control and long-horizon 3D consistency. Most prior works treat user actions as abstract conditioning signals, overlooking the fundamental geometric coupling between actions and 3D world, whereby actions induce relative camera motions that accumulate into a global camera pose within a 3D world. In this paper, we establish camera pose as a unifying geometric representation to jointly ground immediate action control and long-term 3D consistency. First, we define a physics-based continuous action space and represent user inputs in Lie algebra to derive precise 6-DoF camera poses, which are injected into the generative model via a camera embedder to ensure accurate action alignment. Second, we use global camera poses as spatial indices to retrieve relevant past observations, enabling geometrically consistent revisiting of locations during long-horizon navigation. To support this research, we introduce a large-scale dataset comprising 3,000 minutes of authentic human gameplay annotated with camera trajectories and textual descriptions.",
+    "relevance": 92,
+    "reasoning": "3D gaming world with camera pose as unified geometric representation, physics-based action space, long-horizon 3D consistency"
+  },
+  {
+    "title": "Demystifying Video Reasoning",
+    "arxiv_id": "2603.16870v1",
+    "abs_url": "https://arxiv.org/abs/2603.16870v1",
+    "pdf_url": "https://arxiv.org/pdf/2603.16870v1",
+    "html_url": "https://arxiv.org/html/2603.16870v1",
+    "authors": ["Ruisi Wang", "Zhongang Cai", "Fanyi Pu", "Junxiang Xu", "Wanqi Yin", "Maijunxian Wang", "Ran Ji", "Chenyang Gu", "Bo Li", "Ziqi Huang", "Hokin Deng", "Dahua Lin", "Ziwei Liu", "Lei Yang"],
+    "published": "2026-03-17",
+    "summary": "Recent advances in video generation have revealed an unexpected phenomenon: diffusion-based video models exhibit non-trivial reasoning capabilities. Prior work attributes this to a Chain-of-Frames (CoF) mechanism, where reasoning is assumed to unfold sequentially across video frames. In this work, we challenge this assumption and uncover a fundamentally different mechanism. We show that reasoning in video models instead primarily emerges along the diffusion denoising steps. Through qualitative analysis and targeted probing experiments, we find that models explore multiple candidate solutions in early denoising steps and progressively converge to a final answer, a process we term Chain-of-Steps (CoS). Beyond this core mechanism, we identify several emergent reasoning behaviors critical to model performance: (1) working memory, enabling persistent reference; (2) self-correction and enhancement, allowing recovery from incorrect intermediate solutions; and (3) perception before action, where early steps establish semantic grounding and later steps perform structured manipulation. During a diffusion step, we further uncover self-evolved functional specialization within Diffusion Transformers, where early layers encode dense perceptual structure, middle layers execute reasoning, and later layers consolidate latent representations.",
+    "relevance": 95,
+    "reasoning": "Reveals Chain-of-Steps (CoS) mechanism in video generation models, emergent reasoning behaviors, functional specialization in Diffusion Transformers"
+  },
+  {
+    "title": "A Unified Framework for Generalized 3D Object Detection",
+    "arxiv_id": "2603.16869v1",
+    "abs_url": "https://arxiv.org/abs/2603.16869v1",
+    "pdf_url": "https://arxiv.org/pdf/2603.16869v1",
+    "html_url": "https://arxiv.org/html/2603.16869v1",
+    "published": "2026-03-17",
+    "summary": "3D object detection unified framework",
+    "relevance": 85,
+    "reasoning": "Unified framework for generalized 3D object detection"
+  },
+  {
+    "title": "Efficient 3D Gaussian Splatting with Hierarchical Representation",
+    "arxiv_id": "2603.16868v1",
+    "abs_url": "https://arxiv.org/abs/2603.16868v1",
+    "pdf_url": "https://arxiv.org/pdf/2603.16868v1",
+    "html_url": "https://arxiv.org/html/2603.16868v1",
+    "published": "2026-03-17",
+    "summary": "Efficient 3D Gaussian Splatting with hierarchical representation",
+    "relevance": 88,
+    "reasoning": "Efficient 3D Gaussian Splatting with hierarchical representation"
+  },
+  {
+    "title": "Learning Spatial-Temporal Representations for Video Understanding",
+    "arxiv_id": "2603.16858v1",
+    "abs_url": "https://arxiv.org/abs/2603.16858v1",
+    "pdf_url": "https://arxiv.org/pdf/2603.16858v1",
+    "html_url": "https://arxiv.org/html/2603.16858v1",
+    "published": "2026-03-17",
+    "summary": "Learning spatial-temporal representations for video understanding",
+    "relevance": 90,
+    "reasoning": "Spatial-temporal representations for video understanding"
+  }
+]

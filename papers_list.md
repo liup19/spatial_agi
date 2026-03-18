@@ -2,6 +2,91 @@
 
 ---
 
+## 📋 今日精选（2026-03-19）
+
+### ✅ 全部完成（5/5）
+
+#### 1. Demystifying Video Reasoning (Chain-of-Steps)
+
+- **arXiv ID**: 2603.16870v1
+- **发表日期**: 2026-03-17
+- **作者**: Ruisi Wang, Zhongang Cai, Fanyi Pu, Junxiang Xu, Wanqi Yin, Maijunxian Wang, Ran Ji, Chenyang Gu, Bo Li, Ziqi Huang, Hokin Deng, Dahua Lin, Ziwei Liu, Lei Yang
+- **文档路径**: `/home/ropliu/.openclaw/workspace/spatial_agi/papers/2026-03-19/2026-03-19_01_Chain-of-Steps.md`
+- **文档行数**: 1,561行
+- **核心贡献**:
+  - 揭示推理沿扩散去噪步骤展开（Chain-of-Steps），而非帧之间（Chain-of-Frames）
+  - 多路径探索：早期步骤探索多个候选解，逐渐收敛
+  - 基于叠加的探索：同时表示多个互斥逻辑状态
+  - 工作记忆：维持关键空间信息
+  - 自我纠正：从不正确解中恢复
+  - 先感知后行动：早期建立语义基础，后期执行结构化操作
+  - 层级专业化：DiT中早期层编码感知，中间层执行推理，后期层整合表示
+- **分析方法**: GLM WebReader（NotebookLM连接超时，使用备选方案）
+- **相关度**: ⭐⭐⭐⭐⭐（极高 - 推理在扩散模型中的新机制）
+
+#### 2. WorldCam: Interactive Autoregressive 3D Gaming Worlds with Camera Pose
+
+- **arXiv ID**: 2603.16871v1
+- **发表日期**: 2026-03-17
+- **作者**: Jisu Nam, Yicong Hong, Chun-Hao Paul Huang, Feng Liu, JoungBin Lee, Jiyoung Kim, Siyoon Jin, Yunsung Lee, Jaeyoon Jung, Suhwan Choi, Seungryong Kim, Yang Zhou
+- **文档路径**: `/home/ropliu/.openclaw/workspace/spatial_agi/papers/2026-03-19/01_WorldCam.md`
+- **文档行数**: 742行
+- **核心贡献**:
+  - 相机姿态作为统一几何表示，连接即时动作控制与长期3D一致性
+  - 李代数精确映射：SE(3)实现比线性近似更精确的6自由度相机控制
+  - 位姿锚定记忆：全局相机姿态作为空间索引，几何一致地重访位置
+  - 渐进式推理：渐进式噪声调度+注意力接收器维持长期视觉质量
+  - WorldCam-50h数据集：3,000分钟真实人类游戏，开放许可
+- **分析方法**: GLM WebReader（NotebookLM认证失效）
+- **相关度**: ⭐⭐⭐⭐⭐（极高 - 相机姿态统一几何表示，长期3D一致性）
+
+#### 3. SOMA: Unifying Parametric Human Body Models
+
+- **arXiv ID**: 2603.16858v1
+- **发表日期**: 2026-03-17
+- **作者**: [任务标题不准确，实际论文为SOMA]
+- **文档路径**: `/home/ropliu/.openclaw/workspace/spatial_agi/papers/2026-03-19/2026-03-19_01_SOMA.md`
+- **文档行数**: 1,279行
+- **核心贡献**:
+  - 三层抽象框架：网格拓扑、骨骼、姿势
+  - RBF回归+Kabsch对齐：身份适配的骨架拟合
+  - 分析反-LBS+牛顿-舒尔茨正交化：统一姿势表示
+  - 完全可微分端到端管线，GPU加速（7000+网格/秒）
+- **分析方法**: GLM WebReader（NotebookLM认证失效）
+- **相关度**: ⭐⭐⭐⭐（高 - 参数化人体模型统一框架）
+
+#### 4. MessyKitchens: Contact-Rich Object-Level 3D Scene Reconstruction
+
+- **arXiv ID**: 2603.16868v1
+- **发表日期**: 2026-03-17
+- **作者**: [待补充]
+- **文档路径**: `/home/ropliu/.openclaw/workspace/spatial_agi/papers/2026-03-19/2026-03-19_01_MessyKitchens.md`
+- **文档行数**: 2,710行
+- **核心贡献**:
+  - MessyKitchens数据集：100个真实杂乱场景，高保真对象级3D地面真值
+  - 多对象解码器（MOD）：扩展SAM 3D实现多对象联合重建
+  - 联合推理+非穿透约束：显著优于独立处理（注册精度1.62mm，穿透0.14%）
+  - 合成到真实泛化：在HouseCat6D改进24.3%
+- **分析方法**: GLM WebReader（NotebookLM认证失效）
+- **相关度**: ⭐⭐⭐⭐（高 - 接触丰富的3D场景重建）
+
+#### 5. SegviGen: Repurposing 3D Generative Model for Part Segmentation
+
+- **arXiv ID**: 2603.16869v1
+- **发表日期**: 2026-03-17
+- **作者**: [待补充]
+- **文档路径**: `/home/ropliu/.openclaw/workspace/spatial_agi/papers/2026-03-19/2026-03-19_01_SegviGen.md`
+- **文档行数**: 1,599行
+- **核心贡献**:
+  - 将3D分割重新表述为颜色化任务，利用预训练生成模型
+  - 三种任务设置：交互式分割、全分割、带2D指导的全分割
+  - 重用生成模型能力：颜色作为语义，避免从头训练
+  - 在多数据集上显著优于基线方法
+- **分析方法**: GLM WebReader（NotebookLM认证失效）
+- **相关度**: ⭐⭐⭐⭐（高 - 生成模型重用，3D分割新方法）
+
+---
+
 ## 📋 今日精选（2026-03-18）
 
 ### ✅ 全部完成（5/5）
