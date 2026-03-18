@@ -2,6 +2,95 @@
 
 ---
 
+## 📋 今日精选（2026-03-18）
+
+### ✅ 全部完成（5/5）
+
+#### 1. DOMINO: Towards Generalizable Robotic Manipulation in Dynamic Environments
+
+- **arXiv ID**: 2603.15620v1
+- **发表日期**: 2026-03-16
+- **作者**: Heng Fang
+- **文档路径**: `/home/ropliu/.openclaw/workspace/spatial_agi/papers/2026-03-18/01_DOMINO.md`
+- **文档行数**: 1,469行
+- **核心贡献**:
+  - DOMINO数据集 - 大规模动态操作数据集（110K+专家轨迹，35个层级任务）
+  - PUMA架构 - 动态感知VLA模型，场景中心光流 + 世界查询
+  - 隐式预测 - 短视界对象中心未来状态预测，无需显式规划
+  - 性能提升 - 相比基线提升6.3%成功率
+  - 时空表示迁移 - 动态数据训练的表示可迁移到静态任务
+- **分析方法**: GLM WebReader（NotebookLM认证失效）
+- **相关度**: ⭐⭐⭐⭐⭐（极高 - 动态环境中的通用机器人操纵）
+
+#### 2. DeepVision-VLA: Enhancing Vision Foundation Representations for Vision-Language-Action Models
+
+- **arXiv ID**: 2603.15618v1
+- **发表日期**: 2026-03-16
+- **作者**: Yulin Luo, Hao Chen, Zhuangzhe Wu, Bowen Sui, Jiaming Liu, Chenyang Gu, Zhuoyang Liu, Qiuxuan Feng, Jiale Yu, Shuo Gu, Peng Jia, Pheng-Ann Heng, Shanghang Zhang
+- **文档路径**: `/home/ropliu/.openclaw/workspace/spatial_agi/papers/2026-03-18/2026-03-18_01_DeepVision-VLA.md`
+- **文档行数**: 2,425行
+- **核心贡献**:
+  - VLA视觉感知退化发现 - 深层视觉token敏感性递减的普遍现象
+  - VL-MoT框架 - Vision-Language Mixture-of-Transformers，共享注意力注入多层视觉特征
+  - Action-Guided Visual Pruning (AGVP) - 动作指导修剪无关token，保留任务相关
+  - DINOv3作为Vision Expert - 双分辨率设计，高分辨率输入
+  - 性能提升 - RLBench 83% (SOTA)，真实世界91.7%（超越π0.5 7.5%）
+- **分析方法**: GLM WebReader（NotebookLM认证失效）
+- **相关度**: ⭐⭐⭐⭐⭐（极高 - VLA模型的视觉感知增强）
+
+#### 3. Seoul World Model: Grounding World Simulation Models in a Real-World Metropolis
+
+- **arXiv ID**: 2603.15583v1
+- **发表日期**: 2026-03-16
+- **作者**: Junyoung Seo, Hyunwook Choi, Minkyung Kwon, Jinhyeok Choi, Siyoon Jin, Gayoung Lee, Junho Kim, JoungBin Lee, Geonmo Gu, Dongyoon Han, Sangdoo Yun, Seungryong Kim, Jin-Hwa Kim
+- **文档路径**: `/home/ropliu/.openclaw/workspace/spatial_agi/papers/2026-03-18/2026-03-18_01_SWM-Seoul-World-Model.md`
+- **文档行数**: 1,709行
+- **核心贡献**:
+  - 真实世界锚定 - 将世界模型锚定在真实城市（首尔）
+  - 检索增强条件 - 基于附近街景图像的条件机制
+  - 跨时间配对 - 大规模合成数据集，多样化相机轨迹
+  - 视图插值管道 - 从稀疏街景图像合成训练视频
+  - Virtual Lookahead Sink - 稳定长跨度生成，持续重新锚定
+  - 跨城市泛化 - 首尔、釜山、安娜堡三城市验证
+- **分析方法**: GLM WebReader（NotebookLM认证失效）
+- **相关度**: ⭐⭐⭐⭐⭐（极高 - 真实世界锚定的世界模型）
+
+#### 4. HSImul3R: Physics-in-the-Loop Reconstruction of Simulation-Ready Human-Scene Interactions
+
+- **arXiv ID**: 2603.15612v1
+- **发表日期**: 2026-03-16
+- **作者**: Yukang Cao
+- **文档路径**: `/home/ropliu/.openclaw/workspace/spatial_agi/papers/2026-03-18/2026-03-18_01_HSImul3R.md`
+- **文档行数**: 1,430行
+- **核心贡献**:
+  - 感知-模拟gap - 现有方法违反物理约束，导致仿真器不稳定
+  - 物理感知双向优化 - 将物理模拟器作为主动监督者
+  - Scene-targeted RL - 优化人体运动（运动保真度 + 接触稳定性双重监督）
+  - Direct Simulation Reward Optimization (DSRO) - 利用仿真反馈细化场景几何
+  - HSIBench基准 - 多样化对象和交互场景
+  - 真实机器人部署 - 首个稳定、仿真就绪的HSI重建
+- **分析方法**: GLM WebReader（NotebookLM认证失效）
+- **相关度**: ⭐⭐⭐⭐⭐（极高 - 物理在环的重建框架）
+
+#### 5. Tri-Prompting: Video Diffusion with Unified Control over Scene, Subject, and Motion
+
+- **arXiv ID**: 2603.15614v1
+- **发表日期**: 2026-03-16
+- **作者**: Zhenghong Zhou, Xiaohang Zhan, Zhiqin Chen, Soo Ye Kim, Nanxuan Zhao, Haitian Zheng, Qing Liu, He Zhang, Zhe Lin, Yuqian Zhou, Jiebo Luo
+- **文档路径**: `/home/ropliu/.openclaw/workspace/spatial_agi/papers/2026-03-18/2026-03-18_01_Tri-Prompting.md`
+- **文档行数**: 2,047行
+- **核心贡献**:
+  - 统一控制框架 - 场景构图 + 多视图主体一致性 + 运动控制三合一
+  - 双条件运动模块 - 3D跟踪点（背景）+ 下采样RGB（前景）
+  - 两阶段训练 - 解耦背景/前景优化
+  - ControlNet缩放调度 - 平衡可控性与视觉真实感
+  - 多视图主体一致性 - 身份保持提升26.5%（超越Phantom和DaS）
+  - 新颖工作流 - 3D感知主体插入到任意场景
+- **分析方法**: GLM WebReader（NotebookLM认证失效）
+- **相关度**: ⭐⭐⭐⭐⭐（极高 - 视频扩散的统一控制）
+
+---
+
 ## 📋 今日精选（2026-03-17）
 
 ### ✅ 全部完成（3/3）
