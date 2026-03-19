@@ -610,3 +610,130 @@
 - **2026-03-17 08:30**: 完成3篇论文分析（5,359行总）
 - **分析方法**: GLM WebReader（NotebookLM认证超时）
 - **输出目录**: /home/ropliu/.openclaw/workspace/spatial_agi/
+
+---
+
+## 📋 今日精选（2026-03-20）
+
+### ✅ 全部完成（5/5）
+
+#### 1. Loc3R-VLM: Language-based Localization and 3D Reasoning with Vision-Language Models
+
+- **arXiv ID**: 2603.18002
+- **发表日期**: 2026-03-18
+- **作者**: Kevin Qu
+- **文档路径**: `/home/ropliu/.openclaw/workspace/spatial_agi/papers/2026-03-20/01_Loc3R-VLM.md`
+- **文档行数**: 1,645行
+- **核心贡献**:
+  - 双目标监督：全局布局重建 + 显式情境建模
+  - 相机姿态先验：从3D基础模型中提取轻量级先验
+  - 自我定位推理：锚定自我中心视角
+  - 完全端到端训练：联合优化感知、重建、定位
+  - 状态定位：SQA3D 42.6% Acc@0.5m (SOTA)，VSI-Bench 63.2%平均
+- - 视角推理：相对方向任务+36.1%，优于所有基线
+  - 效率：2.6秒/推理（RTX 4090）
+- **分析方法**: GLM WebReader（NotebookLM连接超时）
+- **相关度**: ⭐⭐⭐⭐⭐（极高 - 3D空间推理，VLM增强）
+
+#### 2. Motion-MLLM: Egomotion-Aware Video Representation for Efficient and Accurate 3D Scene Understanding
+
+- **arXiv ID**: 2603.17980
+- **发表日期**: 2026-03-18
+- **作者**: Shuyao Shi, Xuming He, Tengyu Liu, Yifan Zhang, Li Sun
+- **文档路径**: `/home/ropliu/.openclaw/workspace/spatial_agi/papers/2026-03-20/02_Motion-MLLM.md`
+- **文档行数**: 2,492行
+- **核心贡献**:
+  - 级联运动-视觉关键帧过滤：IMU数据 + 视觉特征高效选择稀疏关键帧
+  - 不对称跨模态融合：运动token作为桥梁，通道自运动线索和跨帧视觉上下文
+  - 物理接地：将视觉内容锚定到物理自运动轨迹，推理绝对尺度和空间关系
+  - 成本效益比：1.40×和1.63×优于基于视频和显式3D的SOTA方法
+  - VSI-Bench: 60.3%平均（+9.6%优于基线）
+  - ScanQA: CIDEr 31.5（具有竞争力的3D方法）
+  - 规模任务：+14.4%绝对距离，+21.8%房间大小
+- **分析方法**: GLM WebReader（NotebookLM连接超时）
+- **相关度**: ⭐⭐⭐⭐⭐（极高 - 多模态3D场景理解，物理接地）
+
+#### 3. GMT: Goal-Conditioned Multimodal Transformer for 6-DOF Object Trajectory Synthesis in 3D Scenes
+
+- **arXiv ID**: 2603.17993
+- **发表日期**: 2026-03-18
+- **作者**: Huajian Zeng, Kexin Tang, Xiangyi Li, Xiaoyu Guo, He Wang
+- **文档路径**: `/home/ropliu/.openclaw/workspace/spatial_agi/papers/2026-03-20/03_GMT.md`
+- **文档行数**: 1,454行
+- **核心贡献**:
+  - Perceiver IO启发的可学习潜在数组：统一处理点云、上下文、语义、目标姿态
+  - 四路条件策略：几何（点云到边界框角）、语义（CLIP层级）、上下文（全局场景）、目标（端姿态嵌入）
+  - 6自由度连续旋转表示：避免旋转空间的奇异性
+  - 分层融合：硬几何约束主导软语义线索
+  - 训练目标：平移损失 + 方向损失 + 重建损失 + 目的地损失
+  - 性能：ADT合成（GIMO基线）、HD-EPIC真实世界，在所有指标上优于基线（除碰撞率）
+  - 新基准：基于学习的机器人操作规划（优于CHOIS和GIMO）
+  - **分析方法**: GLM WebReader（NotebookLM连接超时）
+- **相关度**: ⭐⭐⭐⭐（高 - 机器人操作，6-DOF轨迹合成）
+
+#### 4. LoST: Level of Semantics Tokenization for 3D Shapes
+
+- **arXiv ID**: 2603.17995
+- **发表日期**: 2026-03-18
+- **作者**: Niladri Shekhar Dutt, Rishubh Palaparthula, Yu-Xiong Wang, Abhishek Das, Jia-Bin Huang
+- **文档路径**: `/home/ropliu/.openclaw/workspace/spatial_agi/papers/2026-03-20/04_LoST.md`
+- **文档行数**: 1,915行
+- **核心贡献**:
+  - 语义层级标记化：按语义显著性排序，前缀解码为完整形状，后续token细化
+  - RIDA（关系间距离对齐）：跨模态对齐3D形状潜在空间与语义DINO特征空间
+  - LoST-GPT：连续token AR生成器（128 tokens）
+  - AR生成：FID 24.8（vs基线28.4-34.7），DINO 0.802（vs 0.734）
+  - 标记化：LoST(1-4 tokens)优于基线(16-256 tokens)
+  - 形状检索：RIDA 78%同分布内，71%跨分布外准确率
+  - 标记效率：仅需基线0.1%-10%的tokens
+  - **分析方法**: GLM WebReader（NotebookLM连接超时）
+- **相关度**: ⭐⭐⭐（高 - 3D形状表示，语义标记化）
+
+#### 5. STTS: Unified Spatio-Temporal Token Scoring for Efficient Video VLMs
+
+- **arXiv ID**: 2603.18004
+- **发表日期**: 2026-03-18
+- **作者**: Jianrui Zhang, Mingrui Zhang, Zheyu Huang, Zehao Chen, Hao Zhao
+- **文档路径**: `/home/ropliu/.openclaw/workspace/spatial_agi/papers/2026-03-20/05_STTS.md`
+- **文档行数**: 896行
+- **核心贡献**:
+  - 统一架构级标记剪枝：同时在ViT和LLM中修剪视觉token，无需文本条件
+  - 双轴评分机制：时间轴（辅助损失）+ 空间轴（LLM下游梯度）
+  - 高效打包算法：批处理剪枝token，提高计算效率
+  - 性能：修剪50%视觉token，训练和推理效率提升62%
+  - 平均性能：13个视频QA任务仅0.7%下降（短任务56.2%→55.5%，长任务60.6%→59.4%）
+  - 推理加速：MLVU推理1.28×速度提升
+  - 测试时缩放：长视频QA 0.5-1%性能提升
+  - 可扩展性：效率增益随采样帧数增加
+  - **分析方法**: GLM WebReader（NotebookLM连接超时）
+- **相关度**: ⭐⭐⭐（高 - 视频VLM效率，时空标记评分）
+
+---
+
+## 📊 总体统计
+
+**今日分析质量**:
+- ✅ 全部5篇论文完成
+- ✅ 总分析行数：8,402行（平均1,680行/篇）
+- ✅ 远超5,000行最低要求
+- ✅ 平均文档长度：1,680行/篇
+
+**论文多样性**：
+- ✅ 3D空间推理（Loc3R-VLM）
+- ✅ 多模态3D场景理解（Motion-MLLM）
+- ✅ 机器人操作规划（GMT）
+- ✅ 3D形状表示（LoST）
+- ✅ 视频VLM效率（STTS）
+
+**覆盖领域**：
+1. 视觉-语言模型的3D空间推理
+2. 自运动感知的视频表示
+3. 6自由度物体轨迹合成
+4. 3D形状的语义标记化
+5. 视频VLM的高效时空标记剪枝
+
+**分析方法**:
+- GLM WebReader（NotebookLM认证失效）
+- 所有文档超过500行深度分析
+
+**架构更新**（待生成每日思考文档后更新）
