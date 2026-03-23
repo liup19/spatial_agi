@@ -1,0 +1,26 @@
+[
+  {
+    "title": "Generation Models Know Space: Unleashing Implicit 3D Priors for Scene Understanding",
+    "arxiv_id": "2603.19235v1",
+    "abs_url": "https://arxiv.org/abs/2603.19235",
+    "pdf_url": "https://arxiv.org/pdf/2603.19235",
+    "relevance_score": 9.5,
+    "relevance_reason": "Highly relevant to Spatial AGI: leverages implicit 3D spatial priors from video generation models to enhance multimodal LLMs' geometric reasoning and physical understanding. Addresses spatial blindness in VLMs through VEGA-3D framework, enabling better 3D scene understanding and embodied manipulation without explicit 3D supervision."
+  },
+  {
+    "title": "Perceptio: Perception Enhanced Vision Language Models via Spatial Token Generation",
+    "arxiv_id": "2603.18795v1",
+    "abs_url": "https://arxiv.org/abs/2603.18795",
+    "pdf_url": "https://arxiv.org/pdf/2603.18795",
+    "relevance_score": 9.5,
+    "relevance_reason": "Directly addresses VLM spatial grounding limitations through explicit spatial token generation. Integrates semantic segmentation tokens and depth tokens within LLM autoregressive sequence, enabling fine-grained 2D and 3D spatial reasoning. Achieves SOTA on spatial understanding benchmarks including referring expression segmentation and spatial reasoning tasks."
+  },
+  {
+    "title": "Reconstruction Matters: Learning Geometry-Aligned BEV Representation through 3D Gaussian Splatting",
+    "arxiv_id": "2603.19193v1",
+    "abs_url": "https://arxiv.org/abs/2603.19193",
+    "pdf_url": "https://arxiv.org/pdf/2603.19193",
+    "relevance_score": 9.0,
+    "relevance_reason": "Integrates explicit 3D Gaussian Splatting reconstruction into BEV perception for autonomous driving. Addresses lack of geometric understanding in end-to-end BEV frameworks by learning geometry-aligned feature representations. Achieves SOTA on nuScenes and Argoverse datasets, demonstrating importance of explicit 3D representation for accurate spatial perception."
+  }
+]
