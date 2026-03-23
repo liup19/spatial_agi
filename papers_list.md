@@ -1,5 +1,56 @@
 # Spatial AGI Research - 论文列表
 
+## 2026-03-24 (5篇) ✅ 全部完成
+
+1. **X-World: Controllable Ego-Centric Multi-Camera World Models for Scalable End-to-End Driving** [✅ 完成]
+   - arXiv: https://arxiv.org/abs/2603.19979v1
+   - 分析文档: `2026-03-24_01_XWorld_Ego_Centric_Driving.md`
+   - 完成时间: 00:27
+   - 行数: 763行
+   - Tokens: 40k (in 27k / out 13k)
+   - 方法: GLM WebReader (NotebookLM认证失败)
+
+2. **LIORNet: Self-Supervised LiDAR Snow Removal Framework for Autonomous Driving under Adverse Weather Conditions** [✅ 完成]
+   - arXiv: https://arxiv.org/abs/2603.19936v1
+   - 分析文档: `2026-03-24_01_LIORNet_LiDAR_Snow_Removal.md`
+   - 完成时间: 00:30
+   - 行数: 1,235行
+   - Tokens: 45k (in 28k / out 17k)
+   - 方法: GLM WebReader (NotebookLM认证失败)
+
+3. **HUGE-Bench: A Benchmark for High-Level UAV Vision-Language-Action Tasks** [✅ 完成]
+   - arXiv: https://arxiv.org/abs/2603.19822v1
+   - 分析文档: `2026-03-24_01_HUGE_Bench_UAV_VLA.md`
+   - 完成时间: 00:30
+   - 行数: 1,585行
+   - Tokens: 51k (in 33k / out 18k)
+   - 方法: GLM WebReader (NotebookLM认证失败)
+
+4. **WorldAgents: Can Foundation Image Models be Agents for 3D World Models?** [✅ 完成]
+   - arXiv: https://arxiv.org/abs/2603.19708v1
+   - 分析文档: `2026-03-24_01_WorldAgents_Foundation_3D_World_Models.md`
+   - 完成时间: 00:29
+   - 行数: 1,118行
+   - Tokens: 46k (in 31k / out 15k)
+   - 方法: GLM WebReader (NotebookLM认证失败)
+
+5. **TSegAgent: Zero-Shot Tooth Segmentation via Geometry-Aware Vision-Language Agents** [✅ 完成]
+   - arXiv: https://arxiv.org/abs/2603.19684v1
+   - 分析文档: `2026-03-24_01_TSegAgent_Geometry_Aware_VLA.md`
+   - 完成时间: 00:31
+   - 行数: 2,351行
+   - Tokens: 55k (in 33k / out 22k)
+   - 方法: GLM WebReader (NotebookLM认证失败)
+
+**2026-03-24 总结**:
+- ✅ 5/5篇全部完成
+- 总行数: 7,052行
+- 平均行数: 1,410行/篇
+- 总Tokens: 237k (in 152k / out 85k)
+- 总时长: ~25分钟（并行执行）
+
+---
+
 ## 2026-03-23 (5篇) ✅ 全部完成
 
 1. **GSMem: 3D Gaussian Splatting Spatial Memory for Long-Horizon Manipulation** [✅ 完成]
@@ -85,8 +136,9 @@
 
 ---
 
-**总计**: 10篇论文
+**总计**: 15篇论文
+- 2026-03-24: 5篇 (5/5 完成) ✅
 - 2026-03-23: 5篇 (5/5 完成) ✅
 - 2026-03-22: 5篇 (5/5 完成) ✅
-- 总行数: 20,454行
-- 平均行数: 2,045行/篇
+- 总行数: 20,106行
+- 平均行数: 1,341行/篇

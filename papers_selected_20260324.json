@@ -1,0 +1,42 @@
+[
+  {
+    "title": "X-World: Controllable Ego-Centric Multi-Camera World Models for Scalable End-to-End Driving",
+    "arxiv_id": "2603.19979v1",
+    "abs_url": "https://arxiv.org/abs/2603.19979v1",
+    "pdf_url": "https://arxiv.org/pdf/2603.19979v1.pdf",
+    "relevance_score": 10,
+    "relevance_reason": "关键词匹配: scene, video, multi-view, pose, agent, world model, ego-centric, autonomous driving"
+  },
+  {
+    "title": "LIORNet: Self-Supervised LiDAR Snow Removal Framework for Autonomous Driving under Adverse Weather Conditions",
+    "arxiv_id": "2603.19936v1",
+    "abs_url": "https://arxiv.org/abs/2603.19936v1",
+    "pdf_url": "https://arxiv.org/pdf/2603.19936v1.pdf",
+    "relevance_score": 10,
+    "relevance_reason": "关键词匹配: spatial, 3D, robot, pose, perception, autonomous driving, LiDAR"
+  },
+  {
+    "title": "HUGE-Bench: A Benchmark for High-Level UAV Vision-Language-Action Tasks",
+    "arxiv_id": "2603.19822v1",
+    "abs_url": "https://arxiv.org/abs/2603.19822v1",
+    "pdf_url": "https://arxiv.org/pdf/2603.19822v1.pdf",
+    "relevance_score": 10,
+    "relevance_reason": "关键词匹配: scene, 3D, vision-language, Gaussian, Splatting, navigation, agent"
+  },
+  {
+    "title": "WorldAgents: Can Foundation Image Models be Agents for 3D World Models?",
+    "arxiv_id": "2603.19708v1",
+    "abs_url": "https://arxiv.org/abs/2603.19708v1",
+    "pdf_url": "https://arxiv.org/pdf/2603.19708v1.pdf",
+    "relevance_score": 10,
+    "relevance_reason": "关键词匹配: scene, 3D, VLM, vision-language, reconstruction, pose, agent, world model"
+  },
+  {
+    "title": "TSegAgent: Zero-Shot Tooth Segmentation via Geometry-Aware Vision-Language Agents",
+    "arxiv_id": "2603.19684v1",
+    "abs_url": "https://arxiv.org/abs/2603.19684v1",
+    "pdf_url": "https://arxiv.org/pdf/2603.19684v1.pdf",
+    "relevance_score": 10,
+    "relevance_reason": "关键词匹配: 3D, vision-language, neural, multi-view, pose, agent, reasoning, segmentation"
+  }
+]
