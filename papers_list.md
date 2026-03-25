@@ -1,5 +1,65 @@
 # Spatial AGI Research - 论文列表
 
+## 2026-03-26 (5篇) ✅ 全部完成
+
+1. **VISOR: Enhanced VLLM efficiency with sparse, dynamically selected, vision-language interactions** [✅ 完成]
+   - arXiv: https://arxiv.org/abs/2603.23495v1
+   - 分析文档: `2026-03-26_01_VISOR_260323495.md`
+   - 完成时间: 00:34
+   - 行数: 1,088行
+   - Tokens: 37k (in 26k / out 11k)
+   - 方法: GLM WebReader (NotebookLM认证失败)
+   - 关键词: LVLM、稀疏交互、动态选择、推理效率
+
+2. **MedObvious: Exposing Medical Moravec's Paradox in VLMs via Clinical Triage** [✅ 完成]
+   - arXiv: https://arxiv.org/abs/2603.23501v1
+   - 分析文档: `2026-03-26_01_MedObvious_260323501.md`
+   - 完成时间: 00:35
+   - 行数: 1,398行
+   - Tokens: 73k (in 57k / out 16k)
+   - 方法: GLM WebReader (NotebookLM认证失败)
+   - 关键词: 医学VLM、输入验证、sanity检查、Moravec悖论
+
+3. **Foveated Diffusion: Efficient Spatially Adaptive Image and Video Generation** [✅ 完成]
+   - arXiv: https://arxiv.org/abs/2603.23491v1
+   - 分析文档: `2026-03-26_01_FoveatedDiffusion_260323491.md`
+   - 完成时间: 00:35
+   - 行数: 1,472行
+   - Tokens: 46k (in 30k / out 16k)
+   - 方法: GLM WebReader (NotebookLM认证失败)
+   - 关键词: 中央视扩散、空间自适应、感知驱动、生成加速
+
+4. **Hall Viscosity in Quark-Gluon Plasma** [✅ 完成]
+   - arXiv: https://arxiv.org/abs/2603.23498v1
+   - 分析文档: `2026-03-26_01_HallViscosity_260323498.md`
+   - 完成时间: 00:35
+   - 行数: 777行
+   - Tokens: 69k (in 50k / out 18k)
+   - 方法: GLM WebReader (NotebookLM认证失败)
+   - 关键词: 霍尔粘度、夸克-胶子等离子体、物理学、低相关性
+   - 注意: 与Spatial AGI直接相关性较低
+
+5. **Failure of Contextual Invariance in Gender Inference with Large Language Models** [✅ 完成]
+   - arXiv: https://arxiv.org/abs/2603.23485v1
+   - 分析文档: `2026-03-26_01_ContextualInvariance_260323485.md`
+   - 完成时间: 00:36
+   - 行数: 1,538行
+   - Tokens: 53k (in 35k / out 18k)
+   - 方法: GLM WebReader (NotebookLM认证失败)
+   - 关键词: 语境不变性、LLM偏见、性别推断、低相关性
+   - 注意: 与Spatial AGI直接相关性较低
+
+**2026-03-26 总结**:
+- ✅ 5/5篇全部完成
+- 总行数: 6,273行
+- 平均行数: 1,255行/篇
+- 总Tokens: 279k (in 199k / out 79k)
+- 总时长: ~27分钟（并行执行）
+- 方法: 全部使用GLM WebReader（NotebookLM认证失效）
+- 相关性: 3篇直接相关，2篇低相关性（物理、LLM偏见）
+
+---
+
 ## 2026-03-25 (5篇) ✅ 全部完成
 
 1. **WorldCache: Content-Aware Caching for Accelerated Video World Models** [✅ 完成]
