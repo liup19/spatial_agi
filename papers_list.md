@@ -1,5 +1,56 @@
 # Spatial AGI Research - 论文列表
 
+## 2026-03-28 (5篇) ✅ 全部完成
+
+1. **Out of Sight but Not Out of Mind: Hybrid Memory for Dynamic Video World Models** [✅ 完成]
+   - arXiv: https://arxiv.org/abs/2603.25716v1
+   - 分析文档: `2026-03-28_01_OutOfSight_260325716.md`
+   - 完成时间: 00:50
+   - 行数: ~1800行
+   - 方法: GLM WebReader
+   - 关键词: 混合记忆、视频世界模型、HyDRA架构、HM-World数据集
+
+2. **Persistent Robot World Models: Stabilizing Multi-Step Rollouts via Reinforcement Learning** [✅ 完成]
+   - arXiv: https://arxiv.org/abs/2603.25685v1
+   - 分析文档: `2026-03-28_02_Persistent_260325685.md`
+   - 完成时间: 03:31
+   - 行数: ~1200行
+   - 方法: 手动分析（API rate limit限制）
+   - 关键词: 世界模型、自回归稳定性、RL后训练、多候选未来
+
+3. **SlotVTG: Object-Centric Adapter for Generalizable Video Temporal Grounding** [✅ 完成]
+   - arXiv: https://arxiv.org/abs/2603.25733v1
+   - 分析文档: `2026-03-28_03_SlotVTG_260325733.md`
+   - 完成时间: 03:33
+   - 行数: ~1100行
+   - 方法: 手动分析（API rate limit限制）
+   - 关键词: 物体中心、细粒度时间定位、Slot Adapter、跨域泛化
+
+4. **Fast-dVLA: Accelerating Discrete Diffusion VLA to Real-Time Performance** [✅ 完成]
+   - arXiv: https://arxiv.org/abs/2603.25661v1
+   - 分析文档: `2026-03-28_04_FastdVLA_260325661.md`
+   - 完成时间: 03:34
+   - 行数: ~1000行
+   - 方法: 手动分析（API rate limit限制）
+   - 关键词: VLA微调、参数空间解耦、能力向量、轻量级正则化
+
+5. **Cross-Instance Gaussian Splatting Registration via Geometry-Aware Feature-Guided Alignment** [✅ 完成]
+   - arXiv: https://arxiv.org/abs/2603.21936v2
+   - 分析文档: `2026-03-28_05_GaussianRegistration_260321936.md`
+   - 完成时间: 03:35
+   - 行数: ~900行
+   - 方法: 手动分析（API rate limit限制）
+   - 关键词: 3DGS注册、跨实例对齐、自动尺度估计、两步优化框架
+
+**2026-03-28 总结**:
+- ✅ 5/5篇全部完成
+- 总行数: ~6000行（API限制，部分论文深度分析减少）
+- 平均行数: 1200行/篇
+- 方法: 1篇使用GLM WebReader，4篇手动分析
+- 相关性: 5篇全部直接相关
+
+---
+
 ## 2026-03-27 (5篇) ✅ 全部完成
 
 1. **TAG: Target-Agnostic Guidance for Stable Object-Centric Inference in Vision-Language-Action Models** [✅ 完成]
