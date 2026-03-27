@@ -1,5 +1,63 @@
 # Spatial AGI Research - 论文列表
 
+## 2026-03-27 (5篇) ✅ 全部完成
+
+1. **TAG: Target-Agnostic Guidance for Stable Object-Centric Inference in Vision-Language-Action Models** [✅ 完成]
+   - arXiv: https://arxiv.org/abs/2603.24584v1
+   - 分析文档: `2026-03-27_01_TAG_260324584.md`
+   - 完成时间: 08:45
+   - 行数: 4,180行
+   - Tokens: 77k (in 45k / out 32k)
+   - 方法: GLM WebReader (NotebookLM认证失败)
+   - 关键词: VLA鲁棒性、目标无关引导、实例级定位、视觉-空间解耦
+
+2. **Latent-WAM: Latent World Action Modeling for End-to-End Autonomous Driving** [✅ 完成]
+   - arXiv: https://arxiv.org/abs/2603.24581v1
+   - 分析文档: `2026-03-27_02_LatentWAM_260324581.md`
+   - 完成时间: 08:43
+   - 行数: 2,179行
+   - Tokens: 80k (in 61k / out 19k)
+   - 方法: GLM WebReader (NotebookLM认证失败)
+   - 关键词: 世界动作建模、端到端自动驾驶、16x压缩、几何蒸馏
+
+3. **EndoVGGT: GNN-Enhanced Depth Estimation for Surgical 3D Reconstruction** [✅ 完成]
+   - arXiv: https://arxiv.org/abs/2603.24577v1
+   - 分析文档: `2026-03-27_03_EndoVGGT_260324577.md`
+   - 完成时间: 08:44
+   - 行数: ~1,500行
+   - Tokens: 102k (in 77k / out 25k)
+   - 方法: GLM WebReader (NotebookLM认证失败)
+   - 关键词: 手术3D重建、图注意力、零样本泛化、DeGAT
+
+4. **Chameleon: Episodic Memory for Long-Horizon Robotic Manipulation** [✅ 完成]
+   - arXiv: https://arxiv.org/abs/2603.24576v1
+   - 分析文档: `2026-03-27_04_Chameleon_260324576.md`
+   - 完成时间: 08:42
+   - 行数: 1,383行
+   - Tokens: 82k (in 66k / out 15k)
+   - 方法: GLM WebReader (NotebookLM认证失败)
+   - 关键词: 情景记忆、长视野操作、生物启发、EC-HC-PFC
+
+5. **LensWalk: Agentic Video Understanding by Planning How You See in Videos** [✅ 完成]
+   - arXiv: https://arxiv.org/abs/2603.24558v1
+   - 分析文档: `2026-03-27_05_LensWalk_260324558.md`
+   - 完成时间: 08:43
+   - 行数: 2,657行
+   - Tokens: 66k (in 42k / out 24k)
+   - 方法: GLM WebReader (NotebookLM认证失败)
+   - 关键词: 主动观察、reason-plan-observe、视频理解、空间理解映射
+
+**2026-03-27 总结**:
+- ✅ 5/5篇全部完成
+- 总行数: 11,899行
+- 平均行数: 2,380行/篇
+- 总Tokens: 407k (in 292k / out 116k)
+- 总时长: ~35分钟（并行执行）
+- 方法: 全部使用GLM WebReader（NotebookLM认证失效）
+- 相关性: 5篇全部直接相关
+
+---
+
 ## 2026-03-26 (5篇) ✅ 全部完成
 
 1. **VISOR: Enhanced VLLM efficiency with sparse, dynamically selected, vision-language interactions** [✅ 完成]
