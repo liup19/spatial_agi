@@ -1,5 +1,61 @@
 # Spatial AGI Research - 论文列表
 
+## 2026-03-29 (5篇) ✅ 全部完成
+
+1. **LGTM - Less Gaussians, Texture More: 4K Feed-Forward Textured Splatting** [✅ 完成]
+   - arXiv: https://arxiv.org/abs/2603.25745
+   - 分析文档: `2026-03-29_01_2603_25745_LGTM.md`
+   - 完成时间: 09:20
+   - 行数: 1,448行
+   - 方法: GLM WebReader
+   - 关键词: 几何-外观解耦、纹理高斯、4K前向传播、3DGS、频率分离、投影纹理映射
+   - 相关性: ⭐⭐⭐⭐⭐ (与Spatial AGI高度相关)
+
+2. **SlotVTG - Object-Centric Adapter for Generalizable Video Temporal Grounding** [✅ 完成]
+   - arXiv: https://arxiv.org/abs/2603.25733
+   - 分析文档: `2026-03-29_02_2603_25733_SlotVTG.md`
+   - 完成时间: 09:18
+   - 行数: 1,469行
+   - 方法: GLM WebReader
+   - 关键词: 对象中心、Slot Adapter、OOD泛化、视频时间定位、轻量级适配
+   - 相关性: ⭐⭐⭐⭐⭐ (与Spatial AGI高度相关)
+
+3. **Vega - Learning to Drive with Natural Language Instructions** [✅ 完成]
+   - arXiv: https://arxiv.org/abs/2603.25741
+   - 分析文档: `2026-03-29_03_2603_25741_Vega.md`
+   - 完成时间: 09:20
+   - 行数: 1,757行
+   - 方法: GLM WebReader
+   - 关键词: 指令驱动、世界建模、因果推理、自动驾驶、MoT、密集监督
+   - 相关性: ⭐⭐⭐⭐⭐ (与Spatial AGI高度相关)
+
+4. **LIGHT - Unleashing Guidance Without Classifiers for Human-Object Interaction Animation** [✅ 完成]
+   - arXiv: https://arxiv.org/abs/2603.25734
+   - 分析文档: `2026-03-29_04_2603_25734_LIGHT.md`
+   - 完成时间: 09:18
+   - 行数: 1,571行
+   - 方法: GLM WebReader
+   - 关键词: 隐式引导、数据驱动先验、HOI动画、异步去噪、无分类器
+   - 相关性: ⭐⭐⭐⭐⭐ (与Spatial AGI高度相关)
+
+5. **PackForcing - Short Video Training Suffices for Long Video Sampling and Long Context Inference** [✅ 完成]
+   - arXiv: https://arxiv.org/abs/2603.25730
+   - 分析文档: `2026-03-29_05_2603_25730_PackForcing.md`
+   - 完成时间: 09:19
+   - 行数: 1,130行
+   - 方法: GLM WebReader
+   - 关键词: 三分区KV缓存、长视频生成、无界内存、时空压缩、RoPE调整
+   - 相关性: ⭐⭐⭐⭐⭐ (与Spatial AGI高度相关)
+
+**2026-03-29 总结**:
+- ✅ 5/5篇全部完成
+- 总行数: 7,375行（远超5000行要求）
+- 平均行数: 1,475行/篇
+- 方法: 全部使用GLM WebReader（NotebookLM认证失败）
+- 相关性: 5篇全部直接相关（100%）
+
+---
+
 ## 2026-03-28 (5篇) ✅ 全部完成
 
 1. **Out of Sight but Not Out of Mind: Hybrid Memory for Dynamic Video World Models** [✅ 完成]
