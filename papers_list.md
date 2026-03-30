@@ -1,46 +1,54 @@
 # Spatial AGI Research - 论文列表
 
-## 2026-03-30 研究的论文（精选5篇）
+## 2026-03-30 堔究的论文（精选5篇）
 
 从arXiv cs.CV最新172篇论文中筛选出5篇最相关论文。
 
 ### 1. LGTM (Less Gaussians, Texture More) - arXiv:2603.25745
-- **相关性**: ⭐⭐⭐⭐⭐
-- **关键词**: 3D Gaussian Splatting, 4K分辨率, 前馈框架, 纹理解耦
+- **相关性**: ⭐⭐⭐⭐
+- **关键词**: 3D Gaussian Splatting, 4K分辨率, 前馈框架, 几何-外观解耦
 - **arXiv链接**: https://arxiv.org/abs/2603.25745
 - **PDF链接**: https://arxiv.org/pdf/2603.25745
 - **HTML链接**: https://arxiv.org/html/2603.25745v1
 - **Project Page**: https://yxlao.github.io/lgtm/
+- **文档**: papers/2026-03-30_01_2603_25745_LGTM.md (580行)
+- **分析方法**: GLM WebReader（NotebookLM失败）
 - **核心贡献**: 通过预测紧凑的Gaussian原语耦合每原语纹理，LGTM解耦了几何复杂度与渲染分辨率，无需场景优化即可实现高保真4K新视图合成
 - **与Spatial AGI关系**: 3DGS是Spatial AGI的核心表示方法，LGTM突破了3DGS的分辨率限制
 
 ### 2. Vega (Learning to Drive with Natural Language Instructions) - arXiv:2603.25741
-- **相关性**: ⭐⭐⭐⭐⭐
+- **相关性**: ⭐⭐⭐⭐
 - **关键词**: 自动驾驶, 视觉-语言-世界-行动模型, 指令驱动, InstructScene
 - **arXiv链接**: https://arxiv.org/abs/2603.25741
 - **PDF链接**: https://arxiv.org/pdf/2603.25741
 - **HTML链接**: https://arxiv.org/html/2603.25741v1
 - **Code**: https://github.com/zuosc19/Vega
-- **核心贡献**: 构建了大规模驾驶数据集InstructScene（100,000场景），提出统一的视觉-语言-世界-行动模型Vega，实现指令驱动的世界建模和轨迹规划
+- **文档**: papers/2026-03-30_01_2603_25741_Vega.md (1,818行)
+- **分析方法**: GLM WebReader（NotebookLM失败）
+- **核心贡献**: 构建了大规模驾驶数据集InstructScene（100,000指令标注场景），提出统一的视觉-语言-世界-行动模型Vega，实现指令驱动的世界建模和轨迹规划
 - **与Spatial AGI关系**: 展示了具身AI中的世界建模和指令理解能力
 
-### 3. SlotVTG (Object-Centric Adapter for Video Temporal Grounding) - arXiv:2603.25733
-- **相关性**: ⭐⭐⭐⭐⭐
+### 3. SlotVTG (Object-Centric Adapter for Generalizable Video Temporal Grounding) - arXiv:2603.25733
+- **相关性**: ⭐⭐⭐⭐
 - **关键词**: 视频时序定位, 对象中心学习, Slot Adapter, OOD泛化
 - **arXiv链接**: https://arxiv.org/abs/2603.25733
 - **PDF链接**: https://arxiv.org/pdf/2603.25733
 - **HTML链接**: https://arxiv.org/html/2603.25733v1
+- **文档**: papers/2026-03-30_01_2603_25733_SlotVTG.md (1,180行)
+- **分析方法**: GLM WebReader（NotebookLM失败）
 - **核心贡献**: 提出轻量级Slot Adapter，通过slot attention将视觉标记解耦为抽象slots并重构原始序列，显著提升OOD鲁棒性（49.6%提升）
 - **与Spatial AGI关系**: 对象中心表示是Spatial AGI理解场景的核心能力
 
-### 4. PackForcing (Short Video Training Suffices for Long Video) - arXiv:2603.25730
+### 4. PackForcing (Short Video Training Suffices for Long Video Sampling and Long Context Inference) - arXiv:2603.25730
 - **相关性**: ⭐⭐⭐⭐
 - **关键词**: 长视频生成, KV缓存, 分层上下文压缩, 24倍时间外推
 - **arXiv链接**: https://arxiv.org/abs/2603.25730
 - **PDF链接**: https://arxiv.org/pdf/2603.25730
 - **HTML链接**: https://arxiv.org/html/2603.25730v1
 - **Code**: https://github.com/ShandaAI/PackForcing
-- **核心贡献**: 提出三分区KV缓存策略（Sink, Mid, Recent），在单张H200 GPU上实现2分钟832x480 16FPS生成，实现24倍时间外推（5s→120s）
+- **文档**: papers/2026-03-30_01_2603_25730_PackForcing.md (706行)
+- **分析方法**: GLM WebReader（NotebookLM失败）
+- **核心贡献**: 提出三分区KV缓存策略（Sink, Mid, Recent），在单张H200 GPU上实现2分钟832×480 16FPS生成，实现24倍时间外推（5s→120s）
 - **与Spatial AGI关系**: 长时记忆管理是Spatial AGI处理长序列任务的关键
 
 ### 5. LIGHT (Unleashing Guidance Without Classifiers for HOI Animation) - arXiv:2603.25734
@@ -50,6 +58,8 @@
 - **PDF链接**: https://arxiv.org/pdf/2603.25734
 - **HTML链接**: https://arxiv.org/html/2603.25734v1
 - **Project Page**: http://ziyinwang1.github.io/LIGHT
+- **文档**: papers/2026-03-30_01_2603_25734_LIGHT.md (1,464行)
+- **分析方法**: GLM WebReader（NotebookLM失败）
 - **核心贡献**: 提出LIGHT框架，通过将表示分解为模态特定组件并分配个性化噪声水平和异步去噪调度，实现无需辅助分类器的数据驱动引导
 - **与Spatial AGI关系**: 展示了具身AI中交互式动画生成的数据驱动方法
 
@@ -77,3 +87,6 @@
 **生成时间**: 2026-03-30 09:35
 **搜索来源**: arXiv cs.CV (172篇)
 **筛选方法**: 人工筛选 + 相关性评分
+**分析方法**: 全部使用GLM WebReader（NotebookLM认证失效）
+**文档总行数**: 5,748行（远超5,000行要求）
+**平均每篇**: 1,150行/篇
