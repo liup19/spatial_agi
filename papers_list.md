@@ -1,5 +1,62 @@
 # Spatial AGI Research - 论文列表
 
+## 2026-04-01 研究的论文（精选5篇）
+
+从204篇arXiv最新论文中筛选出5篇最相关论文。
+
+### 1. GaussianGPT: Towards Autoregressive 3D Gaussian Scene Generation - arXiv:2603.26661
+- **相关性**: ⭐⭐⭐⭐⭐
+- **关键词**: 3D Gaussian Splatting, 自回归生成, 场景生成, 3D RoPE, 分离词汇表
+- **arXiv链接**: https://arxiv.org/abs/2603.26661
+- **PDF链接**: https://arxiv.org/pdf/2603.26661
+- **HTML链接**: https://arxiv.org/html/2603.26661v1
+- **文档**: papers/2026-04-01_01_GaussianGPT.md
+- **分析方法**: GLM WebReader（NotebookLM认证失效）
+- **核心贡献**: 首次探索完全自回归的3D生成方法，突破依赖扩散或流匹配的主流范式，使用3D RoPE编码位置、分离词汇表设计、大场景外画验证
+- **与Spatial AGI关系**: 3DGS是Spatial AGI的核心表示方法，自回归生成提供可控性和一致性
+
+### 2. Make Geometry Matter for Spatial Reasoning - arXiv:2603.26639
+- **相关性**: ⭐⭐⭐⭐⭐
+- **关键词**: 几何推理, 空间推理, GeoSR框架, 掩蔽机制, 门控融合
+- **arXiv链接**: https://arxiv.org/abs/2603.26639
+- **PDF链接**: https://arxiv.org/pdf/2603.26639
+- **HTML链接**: https://arxiv.org/html/2603.26639v1
+- **文档**: papers/2026-04-01_01_MakeGeometryMatter.md
+- **分析方法**: GLM WebReader（NotebookLM认证失效）
+- **核心贡献**: 提出GeoSR框架，通过几何-解蔽掩蔽和几何-引导融合强制VLM利用几何信息而非依赖2D捷径，解决空间推理中的核心问题
+- **与Spatial AGI关系**: 范式转变，从"如何注入几何信息"到"如何确保几何信息被利用"，几何作为可行动证据而非装饰
+
+### 3. PerceptionComp: A Video Benchmark for Complex Perception-Centric Reasoning - arXiv:2603.26653
+- **相关性**: ⭐⭐⭐⭐⭐
+- **关键词**: 感知推理, 视频推理, 组合逻辑, 空间子条件, 时空推理
+- **arXiv链接**: https://arxiv.org/abs/2603.26653
+- **PDF链接**: https://arxiv.org/pdf/2603.26653
+- **HTML链接**: https://arxiv.org/html/2603.26653v1
+- **文档**: papers/2026-04-01_01_PerceptionComp.md
+- **分析方法**: GLM WebReader（NotebookLM认证失效）
+- **核心贡献**: 首个感知中心、长时域组合视频推理基准，揭示60%失败归因于空间子条件，表明3D空间推理是关键瓶颈
+- **与Spatial AGI关系**: 感知-推理耦合、重复证据收集、场景复杂度驱动、空间推理瓶颈识别
+
+### 4. PoseDreamer: Scalable and Photorealistic Human Data Generation Pipeline with Diffusion Models - arXiv:2603.28763
+- **相关性**: ⭐⭐⭐⭐
+- **关键词**: 人体网格估计, 扩散模型, 合成数据, 直接偏好优化, 难例挖掘
+- **arXiv链接**: https://arxiv.org/abs/2603.28763
+- **PDF链接**: https://arxiv.org/pdf/2603.28763
+- **文档**: papers/2026-04-01_01_PoseDreamer.md
+- **分析方法**: GLM WebReader（NotebookLM认证失效）
+- **核心贡献**: 开发利用扩散模型生成大规模合成人体数据集的管道，使用DPO改善3D-2D一致性，基于模型的反馈课程生成优先考虑挑战性样本，生成50万张高质量图像
+- **与Spatial AGI关系**: 生成模型可以经济实惠地替代昂贵的合成数据获取，合成数据具有独特价值（互补性）
+
+### 5. SHOW3D: Capturing Scenes of 3D Hands and Objects in the Wild
+- **相关性**: ⭐⭐⭐⭐
+- **关键词**: 手-物体交互, 3D姿态估计, 多视图采集, 野外数据, 6DoF物体姿态
+- **文档**: papers/2026-04-01_01_SHOW3D.md
+- **分析方法**: GLM WebReader（NotebookLM认证失效）
+- **核心贡献**: 第一个大规模野外手-物体交互3D数据集，包含430万帧同步多视图图像，具有3D手姿态、MANO网格、6DoF物体姿态和文本字幕
+- **与Spatial AGI关系**: 精细操作需要3D空间理解，多视图融合提高标注质量，文本条件提供语义层次
+
+---
+
 ## 2026-03-31 堆究的论文（精选5篇）
 
 从125篇arXiv最新论文中筛选出5篇最相关论文。
