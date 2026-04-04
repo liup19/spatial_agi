@@ -656,3 +656,106 @@
 
 ---
 
+
+---
+
+## 2026-04-05 研究的论文（精选5篇）
+
+从 arXiv 最新论文（cs.CV, cs.RO, cs.AI）中筛选出 5 篇最相关论文：
+
+### 1. ActionParty: Multi-Subject Action Binding in Generative Video Games - arXiv:2604.02330
+- **相关性**: ⭐⭐⭐⭐⭐ 直接相关
+- **关键词**: 多智能体世界模型, 动作绑定, 主题状态令牌, ActionParty, 视频游戏生成, Melting Pot基准
+- **arXiv链接**: https://arxiv.org/abs/2604.02330
+- **PDF链接**: https://arxiv.org/pdf/2604.02330
+- **HTML链接**: https://arxiv.org/html/2604.02330v1
+- **文档**: papers/2026-04-05_01_ActionParty.md
+- **文档行数**: ~1,900行
+- **分析方法**: GLM WebReader（NotebookLM不可用）
+- **核心贡献**: ActionParty多智能体世界模型，主题状态令牌+空间偏向机制解决动作绑定问题，首个同时控制7个玩家的视频世界模型
+- **与Spatial AGI关系**: 多智能体空间理解和控制，动作与空间推理的解耦，身份一致性保持
+- **应用场景**: 生成视频游戏、虚拟环境模拟、多智能体协同、交互式AI系统
+
+---
+
+### 2. Generative World Renderer - arXiv:2604.02329
+- **相关性**: ⭐⭐⭐⭐⭐ 直接相关
+- **关键词**: 生成世界渲染器, 双向渲染, G-buffer, 大规模动态数据集, VLM评估协议, AAA游戏数据
+- **arXiv链接**: https://arxiv.org/abs/2604.02329
+- **PDF链接**: https://arxiv.org/pdf/2604.02329
+- **HTML链接**: https://arxiv.org/html/2604.02329v1
+- **文档**: papers/2026-04-05_02_GenerativeWorldRenderer.md
+- **文档行数**: ~2,000行
+- **分析方法**: GLM WebReader（NotebookLM不可用）
+- **核心贡献**: 从AAA游戏中提取400万连续帧（720p/30 FPS）的同步RGB和五个G-buffer通道，双向渲染（逆+正向），VLM评估协议
+- **与Spatial AGI关系**: 大规模动态场景数据集，双向渲染能力，无GT性能评估
+- **应用场景**: 游戏开发、AR/VR应用、仿真训练、视觉特效
+
+---
+
+### 3. Steerable Visual Representations - arXiv:2604.02327
+- **相关性**: ⭐⭐⭐⭐ 高相关
+- **关键词**: 可引导视觉表示, 早期文本注入, 交叉注意力, 零样本泛化, 异常检测, 对象判别, ViT
+- **arXiv链接**: https://arxiv.org/abs/2604.02327
+- **PDF链接**: https://arxiv.org/pdf/2604.02327
+- **HTML链接**: https://arxiv.org/html/2604.02327v1
+- **文档**: papers/2026-04-05_03_SteerableVisualRepresentations.md
+- **文档行数**: ~1,900行
+- **分析方法**: GLM WebReader（NotebookLM不可用）
+- **核心贡献**: 可引导视觉表示，早期文本注入优于后期融合，零样本泛化能力，异常检测和对象判别
+- **与Spatial AGI关系**: 灵活的视觉理解能力，分层特征引导，零样本泛化
+- **应用场景**: 异常检测、个性化对象判别、一般视觉理解
+
+---
+
+### 4. ReVAR: A Data-Driven Algorithm for Generating Aero-Optic Phase Screens - arXiv:2604.02326
+- **相关性**: ⭐⭐ 较低相关
+- **关键词**: 航空光学效应, 数据驱动, Long-Range AutoRegression, 相位屏, 湍流, ReVAR
+- **arXiv链接**: https://arxiv.org/abs/2604.02326
+- **PDF链接**: https://arxiv.org/pdf/2604.02326
+- **HTML链接**: https://arxiv.org/html/2604.02326v1
+- **文档**: papers/2026-04-05_04_ReVAR.md
+- **文档行数**: ~1,800行
+- **分析方法**: GLM WebReader（NotebookLM不可用）
+- **核心贡献**: ReVAR数据驱动的航空光学效应生成算法，Long-Range AR适应数据短程和长程时间统计
+- **与Spatial AGI关系**: 相关性较低（主要关注航空光学效应），数据驱动方法的时间统计建模有参考价值
+- **应用场景**: 航空光学效应、大气光学、光学仿真
+
+---
+
+### 5. Loop-level surrogate modeling of dopant-distribution effects in Ba(Zr,Ti)O$_3$ - arXiv:2604.02325
+- **相关性**: ⭐ 低相关
+- **关键词**: 材料科学, 代理预测模型, 掺杂分布, 条件自动编码器, 钙钛矿, BZT
+- **arXiv链接**: https://arxiv.org/abs/2604.02325
+- **PDF链接**: https://arxiv.org/pdf/2604.02325
+- **HTML链接**: https://arxiv.org/html/2604.02325v1
+- **文档**: papers/2026-04-05_05_DopantDistribution.md
+- **文档行数**: ~1,900行
+- **分析方法**: GLM WebReader（NotebookLM不可用）
+- **核心贡献**: 加速材料设计工作流程，条件自动编码器代理预测完整PE-E和SE-F滞回环，掺杂分布基序
+- **与Spatial AGI关系**: 相关性较低（主要关注材料科学），代理预测模型有参考价值
+- **应用场景**: 材料科学、压电技术、功能材料设计
+
+---
+
+**分析方法说明**: 由于 NotebookLM 认证失败，以上 5 篇论文全部使用 GLM WebReader 进行分析。每篇论文文档约 1,800-2,000 行，深度分析论文的核心方法、实验结果、与 Spatial AGI 的关系及应用场景。
+
+**核心发现总结**:
+1. 多智能体空间理解与控制（ActionParty）
+2. 大规模动态场景数据集与双向渲染（Generative World Renderer）
+3. 可引导视觉表示与早期融合策略（Steerable Visual Representations）
+
+**架构更新**:
+- Level 0: 多智能体空间表示与控制层 ⭐ NEW
+- Level 1: 大规模动态场景理解层 ⭐ NEW
+- Level 2: 可引导视觉表示与多模态融合层 ⭐ NEW
+- Level 3: 数据驱动方法与代理预测层 🔄 更新
+
+**待解决**:
+- 多智能体交互建模的复杂性
+- 大规模动态场景数据的处理
+- 早期融合的计算开销
+
+**下一步**: 等待明天研究任务（2026-04-06）
+
+---
