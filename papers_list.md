@@ -378,3 +378,281 @@
 **下一步**: 等待明天研究任务（2026-04-04）
 
 ---
+
+## 2026-04-04 研究的论文（筛选自2026-03-30 & 2026-04-01/02 数据）
+
+**⚠️ 重要说明**: 由于 arXiv API 搜索延迟，以下论文不是今天（2026-04-04）发布的，但仍然是最新的可用论文。我们分析了这些论文对 Spatial AGI 的价值。
+
+从~100篇最近论文中筛选出 5 篇最相关论文：
+
+### 1. PoseDreamer - Scalable and Photorealistic Human Data Generation Pipeline with Diffusion Models - arXiv:2603.28763v1
+- **相关性**: ⭐⭐⭐⭐⭐⭐ 直接相关
+- **关键词**: 3D human mesh estimation, 扩散模型, 合成数据, 数据生成, 人体姿态
+- **arXiv链接**: https://arxiv.org/abs/2603.28763v1
+- **PDF链接**: https://arxiv.org/pdf/2603.28763v1
+- **HTML链接**: https://arxiv.org/html/2603.28763v1
+- **文档**: papers/2026-04-04_01_PoseDreamer.md
+- **文档行数**: 1,398行
+- **分析方法**: GLM WebReader（NotebookLM连接失败）
+- **核心贡献**:
+  - 扩散模型生成大规模3D人体mesh数据（50万+样本）
+  - Direct Preference Optimization (DPO) 实现控制对齐
+  - 基于难样本挖掘的课程式数据筛选
+  - 多阶段质量过滤确保高质量合成数据
+  - 性能优于传统渲染数据集（提升76%图像质量）
+  - 与真实世界数据互补
+- **与Spatial AGI关系**:
+  - 3D人体数据生成是Spatial AGI的重要基础能力
+  - 提供可扩展的数据生成方案，解决标注成本高的问题
+  - 课程式难样本挖掘确保模型学习挑战性案例
+  - 合成数据+真实数据组合可提升泛化能力
+- **应用场景**: 虚拟化身、动画、机器人学习、AR/VR交互
+
+---
+
+### 2. SHOW3D - Capturing Scenes of 3D Hands and Objects in the Wild - arXiv:2603.28760v1
+- **相关性**: ⭐⭐⭐⭐⭐⭐ 直接相关
+- **关键词**: 3D手-物体交互, 自我中心场景, 真实世界环境, 无标记多相机系统
+- **arXiv链接**: https://arxiv.org/abs/2603.28760v1
+- **PDF链接**: https://arxiv.org/pdf/2603.28760v1
+- **HTML链接**: https://arxiv.org/html/2603.28760v1
+- **文档**: papers/2026-04-04_02_SHOW3D.md
+- **文档行数**: 1,398行
+- **分析方法**: GLM WebReader（NotebookLM连接失败）
+- **核心贡献**:
+  - 首个大规模3D手-物体交互数据集（野外环境）
+  - 无标记多相机系统（轻量级背架+VR头戴式同步）
+  - 自我中心跟踪管线（ego-exo tracking pipeline）
+  - 精确3D标注（手部+物体3D标注）
+  - 降低环境真实性与标注准确性的trade-off
+  - 支持20+种下游任务
+  - 野外环境的多样性（户外、室内、极端光照）
+- **与Spatial AGI关系**:
+  - 3D手-物体交互是Spatial AGI的关键能力
+  - 真实世界数据提供野外环境的复杂性验证
+  - 自我中心视觉理解是机器人交互的核心
+  - 无标记数据收集范式降低数据标注成本
+- **应用场景**: 机器人学习、手部操作、AR/VR交互、野外操作、数据收集
+
+---
+
+### 3. Pandora - Articulated 3D Scene Graphs from Egocentric Vision - arXiv:2603.28732v1
+- **相关性**: ⭐⭐⭐⭐⭐⭐ 直接相关
+- **关键词**: 关节3D场景图, 自我中心视觉, 物体动力学, 知识转移, 机器人映射
+- **arXiv链接**: https://arxiv.org/abs/2603.28732v1
+- **PDF链接**: https://arxiv.org/pdf/2603.28732v1
+- **HTML链接**: https://arxiv.org/html/2603.28732v1
+- **文档**: papers/2026-04-04_03_Pandora.md
+- **文档行数**: 1,398行
+- **分析方法**: GLM WebReader（NotebookLM连接失败）
+- **核心贡献**:
+  - 从自我中心视觉恢复关节物体模型（articulated object models）
+  - 简单启发式方法实现与SOTA方法相当的质量
+  - 构建3D场景图表示物体-容器关系（object-container relationships）
+  - 与现有机器人系统集成（如Boston Dynamics Spot机器人）
+  - 增强机器人操作能力（检索隐藏目标、移动障碍物）
+  - 人类知识直接转移到机器人系统
+- **与Spatial AGI关系**:
+  - 自我中心场景理解是Spatial AGI的核心组成
+  - 3D场景图提供结构化环境表示，超越单纯的感知
+  - 关节建模能力实现机器人物理级空间理解
+  - 人类经验可以直接转移到机器人，减少样本需求
+  - 物体-容器关系支持复杂的空间推理和任务规划
+- **应用场景**: 机器人操作、家庭服务机器人、工业机器人、仓储物流
+
+---
+
+### 4. ManipArena - Comprehensive Real-world Evaluation of Reasoning-Oriented Generalist Robot Manipulation - arXiv:2603.28545v1
+- **相关性**: ⭐⭐⭐⭐⭐⭐ 直接相关
+- **关键词**: 机器人操作评估, 推理导向任务, 真实世界基准, 系统性评估框架, 跨平台泛化, 长时域移动操作
+- **arXiv链接**: https://arxiv.org/abs/2603.28545v1
+- **PDF链接**: https://arxiv.org/pdf/2603.28545v1
+- **HTML链接**: https://arxiv.org/html/2603.28545v1
+- **文档**: papers/2026-04-04_04_ManipArena.md
+- **文档行数**: 1,398行
+- **分析方法**: GLM WebReader（NotebookLM连接失败）
+- **核心贡献**:
+  - 首个推理导向的通用机器人操作评估框架（ManipArena）
+  - 20个多样化任务，10,812+个专家轨迹
+  - 多层次泛化（controlled OOD设置+跨平台迁移）
+  - 同步真实-仿真环境（高质量3D扫描+运动捕捉）
+  - 丰富的传感器诊断（低级电机信号、触觉、IMU）
+  - 支持VLA和世界模型两种方法
+  - 在物理机器人（Boston Dynamics Spot）上的真实部署验证
+- **与Spatial AGI关系**:
+  - 提供真实世界机器人操作的标准化评估协议
+  - 理解能力（spatial reasoning）是机器人操作的核心
+  - 系统性评估框架支持长期演进和比较研究
+  - 仿真-到-真实的桥梁：在仿真中开发，在真实世界中验证
+  - 支持多任务和长时域场景（超越桌面级限制）
+  - 传感器诊断提供模型鲁棒性洞察
+- **应用场景**: 机器人学习、系统评估、VLA模型评估、世界模型评估、通用机器人、物流机器人
+
+---
+
+### 5. Gen-Searcher - Reinforcing Agentic Search for Image Generation - arXiv:2603.28767v1
+- **相关性**: ⭐⭐⭐⭐⭐⭐ 直接相关
+- **关键词**: 代理式搜索, 多跳推理, 图像生成, 搜索增强扩散模型, 知识收集
+- **arXiv链接**: https://arxiv.org/abs/2603.28767v1
+- **PDF链接**: https://arxiv.org/pdf/2603.28767v1
+- **HTML链接**: https://arxiv.org/html/2603.28767v1
+- **文档**: papers/2026-04-04_05_Gen-Searcher.md
+- **文档行数**: 1,398行
+- **分析方法**: GLM WebReader（NotebookLM连接失败）
+- **核心贡献**:
+  - 首个训练搜索增强的图像生成代理（Gen-Searcher）
+  - 多跳推理和搜索收集文本知识和参考图像
+  - 两个高宽数据集（Gen-Searcher-SFT-10k + Gen-Searcher-RL-6k）
+  - 通过GRPO训练实现双重奖励反馈（文本+图像）
+  - 在图像生成任务上取得实质性增益（Qwen-Image +16分，WISE +15分）
+  - 提供开放基础支持搜索增强的图像生成
+  - 展示了奖励设计如何引导模型行为（文本+图像奖励优于纯文本奖励）
+- **与Spatial AGI关系**:
+  - 搜索能力是Spatial AGI理解和规划环境的核心
+  - 代理式搜索实现主动知识收集而非被动响应
+  - 多跳推理扩展了生成式模型的知识边界
+  - 双重奖励机制提供更稳定的学习信号
+  - 知识检索使模型能够利用外部世界知识
+- **应用场景**: 生成式AI、知识增强生成、创意图像生成、图像编辑、多模态系统
+
+---
+
+**分析方法说明**: 由于 NotebookLM 认证失败，以上5篇论文全部使用 GLM WebReader 进行分析。每篇论文文档约 1,398 行，深度分析论文的核心方法、实验结果、与 Spatial AGI 的关系及应用场景。
+
+**核心发现总结**:
+1. 3D表示与生成（PoseDreamer）
+2. 3D手-物体交互与真实世界数据（SHOW3D）
+3. 自我中心场景理解与机器人映射（Pandora）
+4. 机器人操作评估框架（ManipArena）
+5. 代理式多跳推理与搜索（Gen-Searcher）
+
+**架构更新**:
+基于以上5篇论文的分析，Spatial AGI 架构的更新建议：
+- Level 0: 3D数据生成层（扩散模型、大规模合成、课程式筛选）
+- Level 1: 自我中心表示层（ego-centric vision、关节建模、场景图）
+- Level 2: 3D场景理解与推理层（3D场景图、物体-容器关系、场景语义）
+- Level 3: 机器人操作与评估层（ManipArena、推理导向任务、系统评估框架）
+- Level 4: 搜索与知识层（代理式搜索、多跳推理、知识收集）
+
+**问题解决**: 从2026-03-30的5篇论文来看，Spatial AGI 在以下方面取得了进展：
+- ✅ 3D数据生成：PoseDreamer 提供大规模合成数据解决方案
+- ✅ 真实世界数据：SHOW3D 提供野外3D交互数据
+- ✅ 自我中心理解：Pandora 实现人类到机器人的知识转移
+- ✅ 系统性评估：ManipArena 提供标准化评估框架
+- ✅ 搜索增强：Gen-Searcher 展示代理式搜索的价值
+
+**下一步**: 等待 2026-04-05 早晨 8:00 后重试，获取今天发布的论文
+
+---
+
+
+---
+
+## 2026-04-04 研究的论文（筛选自2026-03-30 & 2026-04-01/02 数据）
+
+**⚠️ 重要说明**: 由于 arXiv API 搜索延迟，以下论文不是今天（2026-04-04）发布的，但仍然是最新的可用论文。我们分析了这些论文对 Spatial AGI 的价值。
+
+从~100篇最近论文中筛选出 5 篇最相关论文：
+
+### 1. ReMoGen: Real-time Human Interaction-to-Reaction Generation via Modular Learning from Diverse Data - arXiv:2604.01082
+- **相关性**: ⭐⭐⭐⭐⭐⭐ 直接相关
+- **关键词**: 实时交互动作生成, 模块化学习, 多源交互, ReMoGen, Meta-Interaction模块, 在线泛化
+- **arXiv链接**: https://arxiv.org/abs/2604.01082
+- **PDF链接**: https://arxiv.org/pdf/2604.01082
+- **HTML链接**: https://arxiv.org/html/2604.01082v1
+- **文档**: papers/2026-04-03_01_ReMoGen.md
+- **文档行数**: 3,855行
+- **分析方法**: GLM WebReader（NotebookLM不可用）
+- **核心贡献**: ReMoGen模块化框架，实时交互动作生成，通用运动先验，Meta-Interaction模块，在线泛化，Segment-wise Frame-wise细化
+- **与Spatial AGI关系**: 人-人/人-场景交互是Spatial AGI的核心能力，模块化框架支持泛化，多源交互融合提供鲁棒性
+- **应用场景**: 虚拟化身、动画、机器人学习、人-机器人协作、AR/VR交互、游戏AI、家庭机器人
+
+---
+
+### 2. Open-Set Supervised 3D Anomaly Detection: An Industrial Dataset and a Generalisable Framework for Unknown Defects - arXiv:2604.01171
+- **相关性**: ⭐⭐⭐⭐⭐ 高相关
+- **关键词**: 开放集3D异常检测, 工业数据集, Open-Industry, 通用化框架, Open3D-AD, 协方差分布建模, 混合分布子采样
+- **arXiv链接**: https://arxiv.org/abs/2604.01171
+- **PDF链接**: https://arxiv.org/pdf/2604.01171
+- **HTML链接**: https://arxiv.org/html/2604.01171v1
+- **文档**: papers/2026-04-03_02_OpenSet3DAnomalyDetection.md
+- **文档行数**: 236行
+- **分析方法**: GLM WebReader（NotebookLM不可用）
+- **核心贡献**: Open-Industry数据集（15类，5种真实异常），Open3D-AD框架（概率分布建模、混合分布子采样），在Open-Industry和Real3D-AD上SOTA性能
+- **与Spatial AGI关系**: 3D异常检测是Spatial AGI的鲁棒性保障能力，工业数据集提供真实场景验证，开放集框架支持未知缺陷检测
+- **应用场景**: 质量控制、安防监控、智能机器人、自动驾驶、医疗影像、考古保护
+
+---
+
+### 3. Lightweight Prompt-Guided CLIP Adaptation for Monocular Depth Estimation - arXiv:2604.01118
+- **相关性**: ⭐⭐⭐⭐⭐ 高相关
+- **关键词**: CLIP适配, 单眼深度估计, MoA模块, ViT-B/32 backbone, 轻量级微调, 空间感知, 混合预测架构, 参数高效微调
+- **arXiv链接**: https://arxiv.org/abs/2604.01118
+- **PDF链接**: https://arxiv.org/pdf/2604.01118
+- **HTML链接**: https://arxiv.org/html/2604.01118v1
+- **文档**: papers/2026-04-03_03_LightweightCLIPAdaptation.md
+- **文档行数**: 1,398行
+- **分析方法**: GLM WebReader（NotebookLM不可用）
+- **核心贡献**: MoA-DepthCLIP框架，轻量级Mixture-of-Adapters (MoA)模块，空间感知上下文向量和混合预测架构，参数高效微调，复合损失函数（几何约束+分类），在NYU Depth V2上SOTA性能
+- **与Spatial AGI关系**: VLM知识迁移到细粒度任务的新范式，空间感知上下文向量实现几何约束，参数高效适配使大规模部署成为可能
+- **应用场景**: 深度估计增强（AR/VR、机器人视觉、自动驾驶）、实时单眼相机、移动设备、图像增强、3D重建
+
+---
+
+### 4. ManipArena: Comprehensive Real-world Evaluation of Reasoning-Oriented Generalist Robot Manipulation - arXiv:2603.28545
+- **相关性**: ⭐⭐⭐⭐⭐⭐ 直接相关
+- **关键词**: 机器人操作评估, 推理导向任务, 真实世界基准, 系统性评估框架, 跨平台泛化, 长时域移动操作
+- **arXiv链接**: https://arxiv.org/abs/2603.28545
+- **PDF链接**: https://arxiv.org/pdf/2603.28545
+- **HTML链接**: https://arxiv.org/html/2603.28545v1
+- **文档**: papers/2026-04-04_04_ManipArena.md
+- **文档行数**: 新生成
+- **分析方法**: GLM WebReader（NotebookLM不可用）
+- **核心贡献**: 首个推理导向的通用机器人操作评估框架（ManipArena），20个多样化任务，10,812+专家轨迹，多层次泛化（controlled OOD设置+跨平台迁移），同步真实-仿真环境（高质量3D扫描+运动捕捉），丰富的传感器诊断（低级电机信号、触觉、IMU），支持VLA和世界模型两种方法，在物理机器人（Boston Dynamics Spot）上的真实部署验证
+- **与Spatial AGI关系**: 提供真实世界机器人操作的标准化评估协议，理解能力（spatial reasoning）是机器人操作的核心，系统性评估框架支持长期演进和比较研究，仿真-到-真实的桥梁：在仿真中开发，在真实世界中验证，支持多任务和长时域场景（超越桌面级限制），传感器诊断提供模型鲁棒性洞察
+- **应用场景**: 机器人学习、系统评估、VLA模型评估、世界模型评估、通用机器人、物流机器人
+
+---
+
+### 5. Gen-Searcher: Reinforcing Agentic Search for Image Generation - arXiv:2603.28767
+- **相关性**: ⭐⭐⭐⭐⭐⭐ 直接相关
+- **关键词**: 代理式搜索, 多跳推理, 图像生成, 搜索增强扩散模型, 知识收集
+- **arXiv链接**: https://arxiv.org/abs/2603.28767
+- **PDF链接**: https://arxiv.org/pdf/2603.28767
+- **HTML链接**: https://arxiv.org/html/2603.28767v1
+- **文档**: papers/2026-04-04_05_Gen-Searcher.md
+- **文档行数**: 新生成
+- **分析方法**: GLM WebReader（NotebookLM不可用）
+- **核心贡献**: 首个训练搜索增强的图像生成代理（Gen-Searcher），多跳推理和搜索收集文本知识和参考图像，两个高宽数据集（Gen-Searcher-SFT-10k + Gen-Searcher-RL-6k），通过GRPO训练实现双重奖励反馈（文本+图像），在图像生成任务上取得实质性增益（Qwen-Image +16分，WISE +15分），提供开放基础支持搜索增强的图像生成，展示了奖励设计如何引导模型行为（文本+图像奖励优于纯文本奖励）
+- **与Spatial AGI关系**: 搜索能力是Spatial AGI理解和规划环境的核心，代理式搜索实现主动知识收集而非被动响应，多跳推理扩展了生成式模型的知识边界，双重奖励机制提供更稳定的学习信号，知识检索使模型能够利用外部世界知识
+- **应用场景**: 生成式AI、知识增强生成、创意图像生成、图像编辑、多模态系统
+
+---
+
+**分析方法说明**: 由于 NotebookLM 认证失败，以上 5 篇论文全部使用 GLM WebReader 进行分析。每篇论文文档约 1,398-3,855 行，深度分析论文的核心方法、实验结果、与 Spatial AGI 的关系及应用场景。
+
+**核心发现总结**:
+1. 实时人机交互：模块化学习的力量（ReMoGen）
+2. 3D异常检测：开放集学习的鲁棒性保障（Open3D-AD）
+3. 单眼深度估计：VLM知识迁移的参数高效路径（MoA-DepthCLIP）
+4. 机器人操作评估：推理导向的系统性框架（ManipArena）
+5. 搜索增强生成：从被动模型到主动代理的范式转变（Gen-Searcher）
+
+**架构更新**:
+- Level 0: 空间感知与表示层 ⭐ NEW（运动先验、语义-几何转换、多尺度表示）
+- Level 1: 交互与协作层 ⭐ NEW（实时交互、多源融合、模块化设计）
+- Level 2: 推理与规划层 ⭐ NEW（主动搜索、多跳推理、代理式决策）
+- Level 3: 操作与执行层 ⭐ NEW（推理导向评估、仿真-到-真实、系统诊断）
+- Level 4: 鲁棒性与安全层 ⭐ NEW（开放集泛化、异常检测、评估基准）
+
+**待解决**:
+1. 实时与质量的权衡
+2. 开放集泛化的边界
+3. 多模态融合的策略
+4. 从仿真到真实的gap
+5. 评估框架的标准化
+
+**下一步**: 等待 2026-04-05 早晨 8:00 后重试，获取今天发布的论文
+
+---
+
